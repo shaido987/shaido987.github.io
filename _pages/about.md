@@ -9,8 +9,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Huawei Tech. Investment Co., Ltd.</p>
-    <p>Science Park, Shatin, Hong Kong</p>
+    <p>Huawei Tech. Investment Co., Limited.</p>
+    <p>6/F, 2 Science Park West Avenue</p>
+    <p>Hong Kong Science Park, Shatin</p>
+    <!-- 8/F., Bio-Informatics Centre, 2 Science Park West Avenue, Hong Kong Science Park -->
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
