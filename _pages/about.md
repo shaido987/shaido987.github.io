@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Huawei Tech. Investment Co., Limited.</p>
+    <p>Huawei Tech. Investment Co., Limited</p>
     <p>6/F, 2 Science Park West Avenue</p>
     <p>Hong Kong Science Park, Shatin</p>
     <!-- 8/F., Bio-Informatics Centre, 2 Science Park West Avenue, Hong Kong Science Park -->
