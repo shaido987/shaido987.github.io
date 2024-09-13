@@ -29,3 +29,5 @@ Before this, I also obtained my bachelor's degree in computer science at Chalmer
 My research has been guided by the various business projects I've worked on, leading to a wide range of topics.
 In the field of research, I'm therefore more of a generalist, with all the advantages that brings.
 These days, I'm within the embodied AI team and thus work with robotics, VLMs/VLAs, and reinforcement learning.
+
+NOTE: Website still under construction.
