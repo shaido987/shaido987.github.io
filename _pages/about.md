@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior Engineer @ [Noah's Ark Lab](https://www.noahlab.com.hk/#/home), Huawei
+subtitle: Senior Engineer @ <a href="https://www.noahlab.com.hk/#/home">Noah's Ark Lab</a>, Huawei
 
 profile:
   align: right
