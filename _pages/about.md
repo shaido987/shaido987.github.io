@@ -18,11 +18,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Under construction.
-<!--
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I'm Marcus. Born and raised in Gothenburg, Sweden, now living in Hong Kong.
+I'm a Senior Engineer at Noah's Ark Lab with a focus on research.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I obtained my master's degree at <a href=https://en.wikipedia.org/wiki/Chalmers_University_of_Technology>Chalmers</a> in Computer Science with a specialization in algorithms, logic, and languages. 
+During this time, I spent one year as an exchange student in Taiwan at the <a href=https://en.wikipedia.org/wiki/National_Chiao_Tung_University>NCTU</a> 
+and one year in Hong Kong at <a href=https://en.wikipedia.org/wiki/Chinese_University_of_Hong_Kong>CUHK</a> for full-time Chinese (Mandarin) studies.
+Before this, I also obtained my bachelor's degree in computer science at Chalmers.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
--->
+My research has been guided by the various business projects I've worked on, leading to a wide range of topics.
+In the field of research, I'm therefore more of a generalist, with all the advantages that brings.
+These days, I'm within the embodied AI team and thus work with robotics, VLMs/VLAs, and reinforcement learning.
