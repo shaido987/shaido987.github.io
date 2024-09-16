@@ -1,32 +1,32 @@
 "arXiv":
   color: "#009f36"
 
-"KDD Cup"
+"KDD Cup":
   color: "#00c3e6"
-"DASC"
+"DASC":
   color: "#00c3e6"
-"IJCAI WS"
+"IJCAI WS":
   color: "#00c3e6"
-"DASC"
+"DASC":
   color: "#00c3e6"
 
-"KDD"
+"KDD":
   color: "#00369f"
-"ICRA"
+"ICRA":
   color: "#00369f"
 "ICLR"
   color: "#00369f"
 "ICSOC"
   color: "#00369f"
  
-"Computer Networks"
+"Computer Networks":
   color: "#e6d300"
-"Machine Learning"
+"Machine Learning":
   color: "#e6d300"
-"JIFS"
+"JIFS":
   color: "#e6d300"
 
-"Master's thesis"
+"Master's thesis":
   color: "#00e658"
-"Bachelor's thesis"
+"Bachelor's thesis":
   color: "#00e658"
