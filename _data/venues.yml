@@ -1,9 +1,32 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
+"arXiv:
   color: "#009f36"
+
+"KDD Cup"
+  color: "#00c3e6"
+"DASC"
+  color: "#00c3e6"
+"IJCAI WS"
+  color: "#00c3e6"
+"DASC"
+  color: "#00c3e6"
+
+"KDD"
+  color: "#00369f"
+"ICRA"
+  color: "#00369f"
+"ICLR"
+  color: "#00369f"
+"ICSOC"
+  color: "#00369f"
+ 
+"Computer Networks"
+  color: "#e6d300"
+"Machine Learning"
+  color: "#e6d300"
+"JIFS"
+  color: "#e6d300"
+
+"Master's thesis"
+  color: "#00e658"
+"Bachelor's thesis"
+  color: "#00e658"
