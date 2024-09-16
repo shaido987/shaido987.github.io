@@ -1,12 +1,12 @@
 "arXiv":
-   color: "#009f36"
+   color: "#00369f"
 
 "KDD Cup":
-   color: "#00c3e6"
+   color: "#00369f"
 "DASC":
-   color: "#00c3e6"
+   color: "#00369f"
 "IJCAI WS":
-   color: "#00c3e6"
+   color: "#00369f"
 
 "KDD":
    color: "#00369f"
@@ -18,13 +18,13 @@
    color: "#00369f"
 
 "Computer Networks":
-   color: "#e6d300"
+   color: "#00369f"
 "Machine Learning":
-   color: "#e6d300"
+   color: "#00369f"
 "JIFS":
-   color: "#e6d300"
+   color: "#00369f"
 
 "Master's thesis":
-   color: "#00e658"
+   color: "#00369f"
 "Bachelor's thesis":
-   color: "#00e658"
+   color: "#00369f"
