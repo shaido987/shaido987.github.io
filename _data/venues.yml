@@ -1,30 +1,30 @@
 "arXiv":
-   color: "#0000FF"
+   # color: "#0000FF"
 
 "KDD Cup":
-   color: "#0000FF"
+   # color: "#0000FF"
 "DASC":
-   color: "#0000FF"
+   # color: "#0000FF"
 "IJCAI WS":
-   color: "#0000FF"
+   # color: "#0000FF"
 
 "KDD":
-   color: "#0000FF"
+   # color: "#0000FF"
 "ICRA":
-   color: "#0000FF"
+   # color: "#0000FF"
 "ICLR":
-   color: "#0000FF"
+   # color: "#0000FF"
 "ICSOC":
-   color: "#0000FF"
+   # color: "#0000FF"
 
 "Computer Networks":
-   color: "#0000FF"
+   # color: "#0000FF"
 "Machine Learning":
-   color: "#0000FF"
+   # color: "#0000FF"
 "JIFS":
-   color: "#0000FF"
+   # color: "#0000FF"
 
-"Master's thesis":
-   color: "#0000FF"
-"Bachelor's thesis":
-   color: "#0000FF"
+"M.Sc.":
+   # color: "#0000FF"
+"B.Sc.":
+   # color: "#0000FF"
