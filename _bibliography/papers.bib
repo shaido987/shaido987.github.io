@@ -37,6 +37,7 @@
   abbr={ICLR},
   selected={true},
   code={https://github.com/QizhouWang/DOE},
+  abs={Outlier exposure (OE) is powerful in out-of-distribution (OOD) detection, enhancing detection capability via model fine-tuning with surrogate OOD data. However, surrogate data typically deviate from test OOD data. Thus, the performance of OE, when facing unseen OOD data, can be weakened. To address this issue, we propose a novel OE-based approach that makes the model perform well for unseen OOD situations, even for unseen OOD cases. It leads to a min-max learning scheme -- searching to synthesize OOD data that leads to worst judgments and learning from such OOD data for uniform performance in OOD detection. In our realization, these worst OOD data are synthesized by transforming original surrogate ones. Specifically, the associated transform functions are learned implicitly based on our novel insight that model perturbation leads to data transformation. Our methodology offers an efficient way of synthesizing OOD data, which can further benefit the detection model, besides the surrogate OOD data. We conduct extensive experiments under various OOD detection setups, demonstrating the effectiveness of our method against its advanced counterparts.},
 }
 
 @article{mai2023exploit,
@@ -46,6 +47,8 @@
   year={2023},
   html={https://arxiv.org/abs/2303.02449},
   abbr={arXiv},
+  abs={
+Weakly Supervised Semantic Segmentation (WSSS) with image-level labels has long been suffering from fragmentary object regions led by Class Activation Map (CAM), which is incapable of generating fine-grained masks for semantic segmentation. To guide CAM to find more non-discriminating object patterns, this paper turns to an interesting working mechanism in agent learning named Complementary Learning System (CLS). CLS holds that the neocortex builds a sensation of general knowledge, while the hippocampus specially learns specific details, completing the learned patterns. Motivated by this simple but effective learning pattern, we propose a General-Specific Learning Mechanism (GSLM) to explicitly drive a coarse-grained CAM to a fine-grained pseudo mask. Specifically, GSLM develops a General Learning Module (GLM) and a Specific Learning Module (SLM). The GLM is trained with image-level supervision to extract coarse and general localization representations from CAM. Based on the general knowledge in the GLM, the SLM progressively exploits the specific spatial knowledge from the localization representations, expanding the CAM in an explicit way. To this end, we propose the Seed Reactivation to help SLM reactivate non-discriminating regions by setting a boundary for activation values, which successively identifies more regions of CAM. Without extra refinement processes, our method is able to achieve breakthrough improvements for CAM of over 20.0% mIoU on PASCAL VOC 2012 and 10.0% mIoU on MS COCO 2014 datasets, representing a new state-of-the-art among existing WSSS methods.},
 }
 
 @article{kalander2022riskloc,
@@ -57,6 +60,7 @@
   abbr={arXiv},
   selected={true},
   code={https://github.com/shaido987/riskloc},
+  abs={Failures and anomalies in large-scale software systems are unavoidable incidents. When an issue is detected, operators need to quickly and correctly identify its location to facilitate a swift repair. In this work, we consider the problem of identifying the root cause set that best explains an anomaly in multi-dimensional time series with categorical attributes. The huge search space is the main challenge, even for a small number of attributes and small value sets, the number of theoretical combinations is too large to brute force. Previous approaches have thus focused on reducing the search space, but they all suffer from various issues, requiring extensive manual parameter tuning, being too slow and thus impractical, or being incapable of finding more complex root causes. We propose RiskLoc to solve the problem of multidimensional root cause localization. RiskLoc applies a 2-way partitioning scheme and assigns element weights that linearly increase with the distance from the partitioning point. A risk score is assigned to each element that integrates two factors, 1) its weighted proportion within the abnormal partition, and 2) the relative change in the deviation score adjusted for the ripple effect property. Extensive experiments on multiple datasets verify the effectiveness and efficiency of RiskLoc, and for a comprehensive evaluation, we introduce three synthetically generated datasets that complement existing datasets. We demonstrate that RiskLoc consistently outperforms state-of-the-art baselines, especially in more challenging root cause scenarios, with gains in F1-score up to 57% over the second-best approach with comparable running times.},
 }
 
 @article{kalander2022wind,
@@ -67,6 +71,7 @@
   html={https://baidukddcup2022.github.io/papers/Baidu_KDD_Cup_2022_Workshop_paper_5582.pdf},
   abbr={KDD Cup},
   code={https://github.com/shaido987/KDD_wind_power_forecast},
+  abs={Wind energy is an effective supplement to traditional energy sources. However, wind power generation is strongly weather-dependent and thus not only unsustainable in terms of production, but also highly volatile. This complex variability poses a huge challenge to the smooth operation of the grid system. In this scenario, a unique Spatial Dynamic Wind Power Forecasting dataset from Longyuan Power Group Corp. Ltd (SDWPF) is used for modern wind turbine power forecasting. In this work, we propose a framework for accurate wind power generation forecasting (WPF) based on deep learning. To obtain a more generalizable learner, we use ensemble learning to build our framework, which consists of the following two parts: a) a modified version of the DLinear model, which uses time series decomposition and linear layers for information aggregation, and b) an extreme time-gated network that adaptively captures finegrained information and re-aggregates information by spatial location in the inference stage to obtain higher forecasting accuracy. The results indicate that our proposed combined model framework can capture long-term time series information well. Our code is available at https://github. com/shaido987/KDD_wind_power_forecast.},
 }
 
 
@@ -79,6 +84,7 @@
   organization={IEEE},
   html={https://ieeexplore.ieee.org/abstract/document/9927927},
   abbr={DASC},
+  abs={Classification algorithms are widely applied to predict failures and detect anomalies in various application areas. It is common to assume that the data and labels are correct when training, but this is challenging to guarantee in the real world. If there are erroneous labels in the training data, a model can easily overfit to these, resulting in poor performance. How to handle label noise has been previously researched, however, few works focus on label noise in anomaly detection. In this work, we propose LDAAD, a novel algorithm framework for label de-noising for anomaly detection that combines unsupervised learning and semi-supervised learning methods. Specifically, we apply anomaly detection to partition the training data into low-risk and high-risk sets. We subsequently build upon ideas from cross-validation and train multiple classification models on segments of the low-risk data. The models are used both to relabel the samples in the high-risk set and to filter the low-risk samples. Finally, we merge the two sets to obtain a final sample set with more confident labels. We evaluate LDAAD on multiple real-world datasets and show that LDAAD achieves robust results that outperform the benchmark methods. Specifically, LDAAD achieves a 5% accuracy improvement over the second-best method for symmetric noise while having a minimal detrimental impact when no label noise is present.},
 }
 
 @article{pan2022ldaad,
