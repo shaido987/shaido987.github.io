@@ -1,3 +1,67 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Francesco":
+  - firstname: ["Cursi", "C"]
+    url: https://francescocursi.com/
+
+"Wu":
+  - firstname: ["Shuang", "S"]
+    url: https://swuhk.github.io/index.html
+
+"Hao":
+  - firstname: ["Jianye", "J"]
+    url: http://www.icdai.org/jianye.html
+
+"Feng":
+  - firstname: ["Lei", "L"]
+    url: https://lfeng1995.github.io/index.html
+
+"Zhu":
+  - firstname: ["Jieming", "J"]
+    url: https://jiemingzhu.github.io/
+
+"Gong":
+  - firstname: ["Chen", "C"]
+    url: https://gcatnjust.github.io/ChenGong/index.html
+
+"Han":
+  - firstname: ["Bo", "B"]
+    url: https://bhanml.github.io/
+
+"Wang":
+  - firstname: ["Qizhou", "Q"]
+    url: https://qizhouwang.github.io/homepage/
+
+"Liu":
+  - firstname: ["Feng", "F"]
+    url: https://fengliu90.github.io/index.html
+
+"Liu":
+  - firstname: ["Tongliang", "T"]
+    url: https://tongliang-liu.github.io/index.html
+
+"Wang":
+  - firstname: ["Pinghui", "P"]
+    url: https://gr.xjtu.edu.cn/web/phwang
+
+"Yang":
+  - firstname: ["Menglin", "M"]
+    url: https://yangmenglin.site/
+
+"Huang":
+  - firstname: ["Zengfeng", "Z"]
+    url: https://zengfenghuang.github.io/
+
+"King":
+  - firstname: ["Irwin", "I"]
+    url: https://www.cse.cuhk.edu.hk/people/faculty/irwin-king/
+
+"Zhu":
+  - firstname: ["Shengyu", "S"]
+    url: https://zhushy.github.io/
+	
+"Ng":
+  - firstname: ["Ignavier", "I"]
+    url: https://ignavierng.github.io/
+
+"Lee":
+  - firstname: ["Patrick PC", "Patrick P.C.", "P"]
+    url: https://www.cse.cuhk.edu.hk/~pclee/www/index.html
