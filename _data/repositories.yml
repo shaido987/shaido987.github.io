@@ -1,7 +1,7 @@
 github_users:
   - shaido987
 
-repo_description_lines_max: 20
+repo_description_lines_max: 5
 
 github_repos:
   - shaido987/riskloc
