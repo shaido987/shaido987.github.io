@@ -4,10 +4,8 @@ github_users:
 repo_description_lines_max: 20
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - shaido987/riskloc
+  - shaido987/novel-dataset
+  - shaido987/KDD_wind_power_forecast
+  - huawei-noah/trustworthyAI
+  
