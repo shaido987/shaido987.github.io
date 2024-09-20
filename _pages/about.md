@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About Me
 permalink: /
 subtitle: Senior Engineer @ <a href="https://www.noahlab.com.hk/#/home">Noah's Ark Lab</a>, Huawei
 
