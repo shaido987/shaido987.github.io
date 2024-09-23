@@ -3,26 +3,36 @@
 
 "KDD Cup":
 # color: "#0000FF"
+  url: https://baidukddcup2022.github.io/
 "DASC":
 # color: "#0000FF"
+  url: https://cyber-science.org/2022/dasc/
 "IJCAI WS":
 # color: "#0000FF"
+  url: https://wsl-workshop.github.io/ijcai21.html
 
 "KDD":
 # color: "#0000FF"
+  url: https://kdd.org/conferences
 "ICRA":
 # color: "#0000FF"
+  url: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
 "ICLR":
 # color: "#0000FF"
+  url: https://iclr.cc/
 "ICSOC":
 # color: "#0000FF"
+  url: https://icsoc2020.servtech.info/index.html
 
 "Computer Networks":
 # color: "#0000FF"
+  url: https://www.sciencedirect.com/journal/computer-networks
 "Machine Learning":
 # color: "#0000FF"
+  url: https://link.springer.com/journal/10994
 "JIFS":
 # color: "#0000FF"
+  url: https://www.iospress.com/catalog/journals/journal-of-intelligent-fuzzy-systems
 
 "M.Sc.":
 # color: "#0000FF"
