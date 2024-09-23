@@ -11,6 +11,7 @@
   abbr={ICRA},
   selected={true},
   abstract={Playing table tennis with a human player is a challenging robotic task due to its dynamic nature. Despite a number of researches being devoted to developing robotic table tennis systems, most of the works have demanding hardware requirements and ignore safety measures when generating the swing stoke. To address these issues, we propose a safe motion planning framework that fully pushes the robotic hardware performance limits to play table tennis. In particular, we propose a pipeline to generate manipulator joint trajectories with environmental safety constraints and scale the trajectories to satisfy joint movement limitations. We use three different agents to validate the planning algorithm with our handmade robot platform in both simulation and real-world environments.},
+  preview={table_tennis.png},
 }
 
 @article{zhang2024exploiting,
@@ -26,6 +27,7 @@
   abbr={Machine Learning},
   code={https://github.com/Ferenas/APLL},
   abstract={This paper studies a new problem, active learning with partial labels (ALPL). In this setting, an oracle annotates the query samples with partial labels, relaxing the oracle from the demanding accurate labeling process. To address ALPL, we first build an intuitive baseline that can be seamlessly incorporated into existing AL frameworks. Though effective, this baseline is still susceptible to the overfitting, and falls short of the representative partial-label-based samples during the query process. Drawing inspiration from human inference in cognitive science, where accurate inferences can be explicitly derived from counter-examples (CEs), our objective is to leverage this human-like learning pattern to tackle the overfitting while enhancing the process of selecting representative samples in ALPL. Specifically, we construct CEs by reversing the partial labels for each instance, and then we propose a simple but effective WorseNet to directly learn from this complementary pattern. By leveraging the distribution gap between WorseNet and the predictor, this adversarial evaluation manner could enhance both the performance of the predictor itself and the sample selection process, allowing the predictor to capture more accurate patterns in the data. Experimental results on five real-world datasets and four benchmark datasets show that our proposed method achieves comprehensive improvements over ten representative AL frameworks, highlighting the superiority of WorseNet.},
+  preview={ALPL.PNG},
 }
 
 @article{wang2023out,
@@ -38,6 +40,7 @@
   selected={true},
   code={https://github.com/QizhouWang/DOE},
   abstract={Outlier exposure (OE) is powerful in out-of-distribution (OOD) detection, enhancing detection capability via model fine-tuning with surrogate OOD data. However, surrogate data typically deviate from test OOD data. Thus, the performance of OE, when facing unseen OOD data, can be weakened. To address this issue, we propose a novel OE-based approach that makes the model perform well for unseen OOD situations, even for unseen OOD cases. It leads to a min-max learning scheme -- searching to synthesize OOD data that leads to worst judgments and learning from such OOD data for uniform performance in OOD detection. In our realization, these worst OOD data are synthesized by transforming original surrogate ones. Specifically, the associated transform functions are learned implicitly based on our novel insight that model perturbation leads to data transformation. Our methodology offers an efficient way of synthesizing OOD data, which can further benefit the detection model, besides the surrogate OOD data. We conduct extensive experiments under various OOD detection setups, demonstrating the effectiveness of our method against its advanced counterparts.},
+  preview={OOD.PNG},
 }
 
 @article{mai2023exploit,
@@ -48,6 +51,7 @@
   html={https://arxiv.org/abs/2303.02449},
   abbr={arXiv},
   abstract={Weakly Supervised Semantic Segmentation (WSSS) with image-level labels has long been suffering from fragmentary object regions led by Class Activation Map (CAM), which is incapable of generating fine-grained masks for semantic segmentation. To guide CAM to find more non-discriminating object patterns, this paper turns to an interesting working mechanism in agent learning named Complementary Learning System (CLS). CLS holds that the neocortex builds a sensation of general knowledge, while the hippocampus specially learns specific details, completing the learned patterns. Motivated by this simple but effective learning pattern, we propose a General-Specific Learning Mechanism (GSLM) to explicitly drive a coarse-grained CAM to a fine-grained pseudo mask. Specifically, GSLM develops a General Learning Module (GLM) and a Specific Learning Module (SLM). The GLM is trained with image-level supervision to extract coarse and general localization representations from CAM. Based on the general knowledge in the GLM, the SLM progressively exploits the specific spatial knowledge from the localization representations, expanding the CAM in an explicit way. To this end, we propose the Seed Reactivation to help SLM reactivate non-discriminating regions by setting a boundary for activation values, which successively identifies more regions of CAM. Without extra refinement processes, our method is able to achieve breakthrough improvements for CAM of over 20.0% mIoU on PASCAL VOC 2012 and 10.0% mIoU on MS COCO 2014 datasets, representing a new state-of-the-art among existing WSSS methods.},
+  preview={exploit_cam.PNG},
 }
 
 @article{kalander2022riskloc,
@@ -60,6 +64,7 @@
   selected={true},
   code={https://github.com/shaido987/riskloc},
   abstract={Failures and anomalies in large-scale software systems are unavoidable incidents. When an issue is detected, operators need to quickly and correctly identify its location to facilitate a swift repair. In this work, we consider the problem of identifying the root cause set that best explains an anomaly in multi-dimensional time series with categorical attributes. The huge search space is the main challenge, even for a small number of attributes and small value sets, the number of theoretical combinations is too large to brute force. Previous approaches have thus focused on reducing the search space, but they all suffer from various issues, requiring extensive manual parameter tuning, being too slow and thus impractical, or being incapable of finding more complex root causes. We propose RiskLoc to solve the problem of multidimensional root cause localization. RiskLoc applies a 2-way partitioning scheme and assigns element weights that linearly increase with the distance from the partitioning point. A risk score is assigned to each element that integrates two factors, 1) its weighted proportion within the abnormal partition, and 2) the relative change in the deviation score adjusted for the ripple effect property. Extensive experiments on multiple datasets verify the effectiveness and efficiency of RiskLoc, and for a comprehensive evaluation, we introduce three synthetically generated datasets that complement existing datasets. We demonstrate that RiskLoc consistently outperforms state-of-the-art baselines, especially in more challenging root cause scenarios, with gains in F1-score up to 57% over the second-best approach with comparable running times.},
+  preview={riskloc.PNG},
 }
 
 @article{kalander2022wind,
@@ -71,6 +76,7 @@
   abbr={KDD Cup},
   code={https://github.com/shaido987/KDD_wind_power_forecast},
   abstract={Wind energy is an effective supplement to traditional energy sources. However, wind power generation is strongly weather-dependent and thus not only unsustainable in terms of production, but also highly volatile. This complex variability poses a huge challenge to the smooth operation of the grid system. In this scenario, a unique Spatial Dynamic Wind Power Forecasting dataset from Longyuan Power Group Corp. Ltd (SDWPF) is used for modern wind turbine power forecasting. In this work, we propose a framework for accurate wind power generation forecasting (WPF) based on deep learning. To obtain a more generalizable learner, we use ensemble learning to build our framework, which consists of the following two parts: a) a modified version of the DLinear model, which uses time series decomposition and linear layers for information aggregation, and b) an extreme time-gated network that adaptively captures finegrained information and re-aggregates information by spatial location in the inference stage to obtain higher forecasting accuracy. The results indicate that our proposed combined model framework can capture long-term time series information well. Our code is available at https://github. com/shaido987/KDD_wind_power_forecast.},
+  preview={wind.PNG},
 }
 
 
@@ -84,6 +90,7 @@
   html={https://ieeexplore.ieee.org/abstract/document/9927927},
   abbr={DASC},
   abstract={Active Learning designs query strategies to select the most representative samples to be labeled by an oracle in an attempt to maximize the model’s performance while minimizing the labeling workload. We propose REAL, a new pooling-based active learning algorithm for time series data that learns the query strategy and optimizes the representation model in a contrastive manner. To initialize the process, a cluster module is employed to select the first sample set for labeling. Subsequent samples are selected through a contrastive loss function from three complementary perspectives, self-consistency, attraction to similar samples, and repulsion of disparate samples. Concurrently, the contrastive loss is also used to update the representation model. We evaluate our method on various time series classification tasks against state-of-the-art algorithms and demonstrate gains or comparable performance for an equal number of labeled samples.},
+  preview={contrastive.PNG},
 }
 
 @article{pan2022ldaad,
@@ -98,6 +105,7 @@
   pdf={LDAAD.pdf},
   abbr={JIFS},
   abstract={Classification algorithms are widely applied to predict failures and detect anomalies in various application areas. It is common to assume that the data and labels are correct when training, but this is challenging to guarantee in the real world. If there are erroneous labels in the training data, a model can easily overfit to these, resulting in poor performance. How to handle label noise has been previously researched, however, few works focus on label noise in anomaly detection. In this work, we propose LDAAD, a novel algorithm framework for label de-noising for anomaly detection that combines unsupervised learning and semi-supervised learning methods. Specifically, we apply anomaly detection to partition the training data into low-risk and high-risk sets. We subsequently build upon ideas from cross-validation and train multiple classification models on segments of the low-risk data. The models are used both to relabel the samples in the high-risk set and to filter the low-risk samples. Finally, we merge the two sets to obtain a final sample set with more confident labels. We evaluate LDAAD on multiple real-world datasets and show that LDAAD achieves robust results that outperform the benchmark methods. Specifically, LDAAD achieves a 5% accuracy improvement over the second-best method for symmetric noise while having a minimal detrimental impact when no label noise is present.},
+  preview={LDAAD.PNG},
 }
 
 @inproceedings{yang2021discrete,
@@ -111,6 +119,7 @@
   abbr={KDD},
   selected={true},
   abstract={Representation learning over temporal networks has drawn considerable attention in recent years. Efforts are mainly focused onmodeling structural dependencies and temporal evolving regularities in Euclidean space which, however, underestimates the inherentcomplex and hierarchical properties in many real-world temporalnetworks, leading to sub-optimal embeddings. To explore theseproperties of a complex temporal network, we propose a hyperbolic temporal graph network (HTGN) that fully takes advantageof the exponential capacity and hierarchical awareness of hyperbolic geometry. More specially, HTGN maps the temporal graphinto hyperbolic space, and incorporates hyperbolic graph neuralnetwork and hyperbolic gated recurrent neural network, to capture the evolving behaviors and implicitly preserve hierarchicalinformation simultaneously. Furthermore, in the hyperbolic space,we propose two important modules that enable HTGN to successfully model temporal networks: (1) hyperbolic temporal contextualself-attention (HTA) module to attend to historical states and (2) hyperbolic temporal consistency (HTC) module to ensure stability andgeneralization. Experimental results on multiple real-world datasetsdemonstrate the superiority of HTGN for temporal graph embedding, as it consistently outperforms competing methods by significant margins in various temporal link prediction tasks. Specifically,HTGN achieves AUC improvement up to 9.98% for link predictionand 11.4% for new link prediction. Moreover, the ablation study further validates the representational ability of hyperbolic geometryand the effectiveness of the proposed HTA and HTC modules. Codeis publicly available at https://github.com/marlin-codes/HTGN.},
+  preview={htgn.PNG},
 }
 
 @article{zhang2021gcastle,
@@ -122,6 +131,7 @@
   abbr={arXiv},
   code={https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle},
   abstract={gCastle is an end-to-end Python toolbox for causal structure learning. It provides functionalities of generating data from either simulator or real-world dataset, learning causal structure from the data, and evaluating the learned graph, together with useful practices such as prior knowledge insertion, preliminary neighborhood selection, and post-processing to remove false discoveries. Compared with related packages, gCastle includes many recently developed gradient-based causal discovery methods with optional GPU acceleration. gCastle brings convenience to researchers who may directly experiment with the code as well as practitioners with graphical user interference. Three real-world datasets in telecommunications are also provided in the current version. gCastle is available under Apache License 2.0 at \url{https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle}.},
+  preview={gcastle.png},
 }
 
 @article{wen2021ensemble,
@@ -132,6 +142,7 @@
   html={https://arxiv.org/abs/2107.02347},
   abbr={IJCAI WS},
   abstract={We consider the problem of training robust and accurate deep neural networks (DNNs) when subject to various proportions of noisy labels. Large-scale datasets tend to contain mislabeled samples that can be memorized by DNNs, impeding the performance. With appropriate handling, this degradation can be alleviated. There are two problems to consider: how to distinguish clean samples and how to deal with noisy samples. In this paper, we present Ensemble Noise-robust K-fold Cross-Validation Selection (E-NKCVS) to effectively select clean samples from noisy data, solving the first problem. For the second problem, we create a new pseudo label for any sample determined to have an uncertain or likely corrupt label. E-NKCVS obtains multiple predicted labels for each sample and the entropy of these labels is used to tune the weight given to the pseudo label and the given label. Theoretical analysis and extensive verification of the algorithms in the noisy label setting are provided. We evaluate our approach on various image and text classification tasks where the labels have been manually corrupted with different noise ratios. Additionally, two large real-world noisy datasets are also used, Clothing-1M and WebVision. E-NKCVS is empirically shown to be highly tolerant to considerable proportions of label noise and has a consistent improvement over state-of-the-art methods. Especially on more difficult datasets with higher noise ratios, we can achieve a significant improvement over the second-best model. Moreover, our proposed approach can easily be integrated into existing DNN methods to improve their robustness against label noise.},
+  preview={noise.PNG},
 }
 
 @inproceedings{zhang2020influence,
@@ -145,6 +156,7 @@
   abbr={ICSOC},
   code={https://github.com/shaido987/alarm-rca},
   abstract={Alarm root cause analysis is a significant component in theday-to-day telecommunication network maintenance, and it is critical forefficient and accurate fault localization and failure recovery. In practice,accurate and self-adjustable alarm root cause analysis is a great challenge due to network complexity and vast amounts of alarms. A popularapproach for failure root cause identification is to construct a graph withapproximate edges, commonly based on either event co-occurrences orconditional independence tests. However, considerable expert knowledgeis typically required for edge pruning. We propose a novel data-drivenframework for root cause alarm localization, combining both causal inference and network embedding techniques. In this framework, we designa hybrid causal graph learning method (HPCI), which combines HawkesProcess with Conditional Independence tests, as well as propose a novelCausal Propagation-Based Embedding algorithm (CPBE) to infer edgeweights. We subsequently discover root cause alarms in a real-time datastream by applying an influence maximization algorithm on the weightedgraph. We evaluate our method on artificial data and real-world telecomdata, showing a significant improvement over the best baselines.},
+  preview={alarm_rca.PNG},
 }
 
 @article{kalander2020spatio,
@@ -156,6 +168,7 @@
   abbr={arXiv},
   selected={true},
   abstract={Telecommunication networks play a critical role in modern society. With the arrival of 5G networks, these systems are becoming even more diversified, integrated, and intelligent. Traffic forecasting is one of the key components in such a system, however, it is particularly challenging due to the complex spatial-temporal dependency. In this work, we consider this problem from the aspect of a cellular network and the interactions among its base stations. We thoroughly investigate the characteristics of cellular network traffic and shed light on the dependency complexities based on data collected from a densely populated metropolis area. Specifically, we observe that the traffic shows both dynamic and static spatial dependencies as well as diverse cyclic temporal patterns. To address these complexities, we propose an effective deep-learning-based approach, namely, Spatio-Temporal Hybrid Graph Convolutional Network (STHGCN). It employs GRUs to model the temporal dependency, while capturing the complex spatial dependency through a hybrid-GCN from three perspectives: spatial proximity, functional similarity, and recent trend similarity. We conduct extensive experiments on real-world traffic datasets collected from telecommunication networks. Our experimental results demonstrate the superiority of the proposed model in that it consistently outperforms both classical methods and state-of-the-art deep learning models, while being more robust and stable.},
+  preview={STHGCN.PNG},
 }
 
 @article{pan2020proactive,
@@ -169,6 +182,7 @@
   html={https://www.cse.cuhk.edu.hk/~pclee/www/pubs/comnet19.pdf},
   abbr={Computer Networks},
   abstract={Microwave links are widely used in cellular networks for large-scale data transmission. From the network operators’ perspective, it is critical to quickly and accuratelydetect microwave link failures before they actually happen, thereby maintaining therobustness of the data transmissions. We present PMADS, a machine-learning-basedproactive microwave link anomaly detection system that exploits both performancedata and network topological information to detect microwave link anomalies that mayeventually lead to actual failures. Our key observation is that anomalous links oftenshare similar network topological properties, thereby enabling us to further improvethe detection accuracy. To this end, PMADS adopts a network-embedding-based approach to encode topological information into features. It further adopts a novel activelearning algorithm, ADAL, to continuously update the detection model at low cost byfirst applying unsupervised learning to separate anomalies as outliers from the training set. We evaluate PMADS on a real-world dataset collected from 2,142 microwavelinks in a production LTE network during a one-month period, and show that PMADSachieves a precision of 94.4% and a recall of 87.1%. Furthermore, using the activelearning feedback loop, only 7% of the training data is required to achieve comparable results. PMADS is currently deployed in a metropolitan LTE network that servesaround four million subscribers in a Middle Eastern country.},
+  preview={PMADS.PNG},
 }
 
 @article{mcnabb2016natural,
@@ -178,6 +192,7 @@
   html={https://odr.chalmers.se/handle/20.500.12380/239085},
   abbr={M.Sc.},
   abstract={A machine able to autonomously recognise driving styles has numerous applications, of which the moststraightforward is to recognise risky behaviour. Such knowledge can be used to teach new drivers with thegoal of reducing accidents in the future and increasing traffic safety for all road users. Furthermore, insurancecompanies can incentivise safe driving with lower premiums, which in turn can motivate a more careful drivingstyle. Another application is within the field of autonomous vehicles where learning about driving styles isimperative for autonomous vehicles to be able to interact with other drivers in traffic.The first step towards identifying different driving styles is being able to recognise and distinguish betweenthem. The aim of this thesis is to identify the indicators of aggressive driving in curves from a large amountof naturalistic driving data. The first step was finding curve sections to analyse within trips and the secondstep was reducing the data to become more manageable. Symbolic representations were used for the secondpreprocessing step, which in turn allowed the use of Natural Language Processing techniques for the analysis.We categorise drivers into different groups depending on their perceived tendency towards aggressive drivingstyles. This categorisation is used to compare the drivers and their driving style with each other. The tendenciesused were Speeding, Braking, Jerky curve handling and Rough curve handling. Some general trends among theanalysed drivers are also identified. It is possible to reuse the categorisation to include more drivers in thefuture or to use what we have learned about the features and drivers for further research.},
+  preview={driving_styles.PNG},
 }
 
 @article{bergqvist2014chalmers,
@@ -187,4 +202,5 @@
   html={https://odr.chalmers.se/handle/20.500.12380/203767},
   abbr={B.Sc.},
   abstract={Chalmers University of Technology today have numerous computers which are never powered down, at the same time there is a need for more computation power for researchers.Hence, we have investigated the possibility to use the computers for computing power andsecondly, if there is no work to be done, to put them into power saving mode.We have made a thorough study where we compared different distributing systems andin the end HTCondor was chosen as the best to implement. HTCondor is an excellent system for opportunistic use of computing power, i.e. make use of computers that no one elseis currently using. The system is used at several universities around the world with goodresults and would be excellent at Chalmers, where there is a need for such a system.Our implementation shows that HTCondor is well capable of handling unused computingpower. HTCondor can handle most file types that may be run on the system. The system canalso put computers in sleep mode when they are not in use and turn them on when needed.To simplify for the users of HTCondor we have created a user interface that have all necessary functions required to make use of the system as no good such interface was available.There are doubts from Chalmers regarding the idea of shutting down computers, they arguethat the computers always must be available and that problems may arise when turningthem on, for example programs that do not start. Our investigation shows that there areno bigger problems with turning on and off computers, which is shown in a energy study inwhich sleep mode is determined to be the best energy saving option for Chalmers.},
+  preview={htcondor.PNG},
 }
