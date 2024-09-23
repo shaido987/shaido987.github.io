@@ -1,5 +1,6 @@
 "arXiv":
 # color: "#0000FF"
+  url: https://arxiv.org/
 
 "KDD Cup":
 # color: "#0000FF"
@@ -36,5 +37,7 @@
 
 "M.Sc.":
 # color: "#0000FF"
+  url: https://www.chalmers.se/en/education/find-masters-programme/computer-science-algorithms-languages-and-logic-msc/
 "B.Sc.":
 # color: "#0000FF"
+  url: https://www.chalmers.se/en/departments/cse/
