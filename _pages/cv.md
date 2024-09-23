@@ -1,11 +1,6 @@
 ---
-layout: cv
+layout: default
 permalink: /assets/pdf/CV.pdf
 title: CV
 nav: true
-nav_order: 5
-cv_pdf: marcus_kalander_cv.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
 ---
