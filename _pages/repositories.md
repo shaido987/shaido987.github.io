@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Code
-<!-- description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories. -->
+description: You can find implementations for some recent projects below.
 nav: true
 nav_order: 4
 ---
