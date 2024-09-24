@@ -4,7 +4,7 @@ title: Competition organizer
 description: Co-organized a causal structure learning competition at the NeurIPS 2023 conference.
 img: assets/img/csl_competition.png
 importance: 2
-category: work
+category: causality
 ---
 
 Co-organized a [causal structure learning competition](https://gcastle-hub.github.io/csl-competition/) at the [NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582) conference.
