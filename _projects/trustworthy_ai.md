@@ -4,7 +4,7 @@ title: TrustworthyAI
 description: Maintainer of the TrustworthAI repository for Noah's Ark Lab
 img: assets/img/noahs_ark_icon.png
 importance: 1
-category: work
+category: causality
 related_publications: true
 github: https://github.com/huawei-noah/trustworthyAI
 ---
