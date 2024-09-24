@@ -18,8 +18,9 @@ The goal of this competition was to solve a causal structure learning problem in
     </div>
 </div>
 <div class="caption">
-    RCA solution in a telecommunication network as considered in the competition.
+    An RCA solution in a telecommunication network as considered in the competition.
 </div>
+
 
 The goal of the participants was, given a series of datasets, that for each dataset use the historical alarm data, device topology, and prior knowledge (if available) to learn a causal graph for the involved alarm types.
 Each learned causal graph is represented by a binary adjacency matrix and the ground truth graphs are manually labeled by experts or, for synthetic datasets, pre-set causal assumptions.	
