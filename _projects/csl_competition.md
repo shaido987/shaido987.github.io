@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NeurIPS 2023 competition organizer
+title: Competition organizer
 description: Co-organized a causal structure learning competition at the NeurIPS 2023 conference.
 img: assets/img/csl_competition.png
 importance: 2
