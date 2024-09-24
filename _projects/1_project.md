@@ -1,7 +1,7 @@
 ---
 layout: page
 title: gCastle Maintainer
-description: 
+description:
 img: assets/img/publication_preview/gcastle.png
 importance: 1
 category: work
