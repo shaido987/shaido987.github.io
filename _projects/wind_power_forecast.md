@@ -6,4 +6,3 @@ img: assets/img/7.jpg
 importance: 2
 category: competitions
 ---
-
