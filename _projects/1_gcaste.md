@@ -2,7 +2,7 @@
 layout: page
 title: TrustworthyAI
 description: Repository maintainer for Noah's Ark Lab
-img: assets/img/publication_preview/gcastle.png
+img: assets/img/noahs_ark_icon.png
 importance: 1
 category: work
 related_publications: true
