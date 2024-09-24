@@ -2,7 +2,7 @@
 layout: page
 title: Novel Dataset
 description: desc
-img: 
+img:
 importance: 1
 category: fun
 ---
