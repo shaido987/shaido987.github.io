@@ -1,13 +1,13 @@
 ---
 layout: page
 title: NeurIPS 2023 competition organizer
-description: Co-organized a causal structure learning competition at the [NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582) conference.
+description: Co-organized a causal structure learning competition at the NeurIPS 2023 conference.
 img: assets/img/csl_competition.png
 importance: 2
 category: work
 ---
 
-Co-organized a [causal structure learning competition](https://gcastle-hub.github.io/csl-competition/) at the NeurIPS 2023 conference.
+Co-organized a [causal structure learning competition](https://gcastle-hub.github.io/csl-competition/) at the [NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582) conference.
 
 The goal of this competition was to solve a causal structure learning problem in AIOps (Artificial Intelligence for IT Operations). In telecommunication networks, anomalies are commonly identified through alarms. The network operators might be facing millions of alarms per day due to the large scale and the interrelated structure of the network, as a single fault in the network can trigger a flood of various types of alarms on multiple connected devices. The goal of the operators is to quickly localize the failure point to facilitate a fast repair and recovery. However, handling all these alarms is exhausting and can quickly overwhelm the operators; hence, it must be done intelligently. There has been increasing interest in tackling the above root cause analysis (RCA) problem from a causal perspective, i.e., learning a causal graph that represents alarm relations and then using decision-making techniques (such as causal effect estimation and counterfactual inference) to efficiently identify the root cause alarm when a fault occurs. A typical RCA solution for the telecommunication network can be seen in the figure.
 
