@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A couple of interesting projects and competitions I've been involved with, either through work or on my own time.
 nav: true
 nav_order: 3
 display_categories: [causality, competitions, fun]
