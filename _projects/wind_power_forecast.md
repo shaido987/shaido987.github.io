@@ -16,8 +16,8 @@ github: https://github.com/shaido987/KDD_wind_power_forecast
 |      3       | Tmstamp         | Created time of the record                                               |
 |      4       | Wspd (m/s)      | The wind speed recorded by the anemometer                                |
 |      5       | Wdir (°)        | The angle between the wind direction and the position of turbine nacelle |
-|      6       | Etmp (℃)       | Temperature of the surrounding environment                               |
-|      7       | Itmp (℃)       | Temperature inside the turbine nacelle                                   |
+|      6       | Etmp (℃)        | Temperature of the surrounding environment                               |
+|      7       | Itmp (℃)        | Temperature inside the turbine nacelle                                   |
 |      8       | Ndir (°)        | Nacelle direction, i.e., the yaw angle of the nacelle                    |
 |      9       | Pab1 (°)        | Pitch angle of blade 1                                                   |
 |      10      | Pab2 (°)        | Pitch angle of blade 2                                                   |
