@@ -52,7 +52,8 @@ The dataset includes:
 
 ## Proposed solution
 
-{% cite  kalander2022wind --file references %}
+The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c).
+
 {% cite  Zeng2022AreTE --file references %}
 
 <h2>References</h2>
