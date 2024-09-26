@@ -61,7 +61,6 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
 
 ### Preprocessing & Feature Engineering
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Immediate forecast" class="img-fluid rounded z-depth-1" %}
@@ -85,8 +84,8 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
 
 From the SHAP values illustrated above, we can determine that not all features are important. 
 
-- We directly remove the directional features *Wdir* (wind direction) and *Ndir* (nacelle yaw).
-- We also remove all the temperature-related features: *Etmp* and *Itmp* (temperatures for the environment and inside the turbine).
+- We directly remove the directional features _Wdir_ (wind direction) and _Ndir_ (nacelle yaw).
+- We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
 
 <div class="col-sm-4 align-self-end mt-3 mt-md-0">
 	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.pdf" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
