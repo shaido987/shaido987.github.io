@@ -54,10 +54,10 @@ The dataset includes:
 ## Proposed solution
 
 {% cite kalander2022wind %}
-{% cite Zeng2022AreTE --file references %}
+{% cite Zeng2022AreTE --file /_bibliography/references.bib %}
 
 <h2>References</h2>
 <div class="publications">
     {% bibliography --cited_in_order %}
-    {% bibliography --file references --cited_in_order %}
+    {% bibliography --file /_bibliography/references.bib --cited_in_order %}
 </div>
