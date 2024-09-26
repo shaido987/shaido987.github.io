@@ -96,5 +96,5 @@ From the SHAP values illustrated above, we can determine that not all features a
 
 <h2>References</h2>
 <div class="publications">
-    {% bibliography --file references --cited_in_order %}
+    {% bibliography --file references --cited %}
 </div>
