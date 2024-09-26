@@ -82,7 +82,7 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
     </div>
 </div>
 
-From the SHAP values illustrated above, we can determine that not all features are important. 
+From the SHAP values illustrated above, we can determine that not all features are important.
 
 - We directly remove the directional features _Wdir_ (wind direction) and _Ndir_ (nacelle yaw).
 - We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
