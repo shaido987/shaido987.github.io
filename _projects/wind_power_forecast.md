@@ -55,8 +55,7 @@ The dataset includes:
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
 
 - Modified DLinear (MDLinear): An altered version of DLinear {% cite  Zeng2022AreTE --file references %}.
-- Extreme Temporal Gated Network (XTGN): based on stacking gated temporal convolutional networks (TCNs) 
-{% cite  dauphin2017 lea2016tcn --file references %} and nearest neighbor information diffusion. 
+- Extreme Temporal Gated Network (XTGN): based on stacking gated temporal convolutional networks (TCNs) {% cite  dauphin2017 lea2016tcn --file references %} and nearest neighbor information diffusion.
 
 Both models use a masked loss function that ignores missing, unknown, or abnormal values.
 
