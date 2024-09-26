@@ -52,6 +52,7 @@ The dataset includes:
 
 ## Proposed solution
 
+{% cite  kalander2022wind --file references %}
 {% cite  Zeng2022AreTE --file references %}
 
 <h2>References</h2>
