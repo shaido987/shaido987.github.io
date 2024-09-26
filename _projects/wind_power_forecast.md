@@ -52,6 +52,8 @@ The dataset includes:
 
 ## Proposed solution
 
+{% cite  Zeng2022AreTE --file references %}
+
 <h2>References</h2>
 <div class="publications">
     {% bibliography --file references %}
