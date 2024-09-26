@@ -9,7 +9,7 @@ related_publications: true
 github: https://github.com/shaido987/KDD_wind_power_forecast
 ---
 
-# Challenge
+# Challenge details
 
 The competition's goal was to estimate the wind power supply of a wind farm at different time scales. The variability of wind power presents substantial challenges in incorporating it into an 
 energy grid system. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation. 
