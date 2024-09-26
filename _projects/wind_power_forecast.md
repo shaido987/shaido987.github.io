@@ -5,7 +5,7 @@ description: KDD Cup 2022 (6th place)
 img: assets/img/baidukddcup2022.png
 importance: 2
 category: competitions
-related_publications: true
+<!-- related_publications: true -->
 github: https://github.com/shaido987/KDD_wind_power_forecast
 ---
 
@@ -56,6 +56,8 @@ The dataset includes:
 {% cite kalander2022wind %}
 {% cite Zeng2022AreTE %}
 
-{% bibliography --cited %}
-{% bibliography --file references --cited %}
-
+<h2>References</h2>
+<div class="publications">
+    {% bibliography --cited_in_order %}
+    {% bibliography --file references --cited %}
+</div>
