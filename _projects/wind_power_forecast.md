@@ -12,7 +12,7 @@ github: https://github.com/shaido987/KDD_wind_power_forecast
 # Challenge details
 
 The competition's goal was to estimate the wind power supply of a wind farm at different time scales. The variability of wind power presents substantial challenges in incorporating it into an 
-energy grid system. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation. 
+energy grid system. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -23,10 +23,10 @@ energy grid system. Wind power forecasting has been widely recognized as one of 
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/kdd_cup_wind/turbine.gif" title="wind turbine" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="caption">
+        <div class="caption">
             Caption B
         </div>
+    </div>
 </div>
 
 Two interesting features are different from standard wind power forecasting scenarios:
