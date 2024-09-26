@@ -17,13 +17,16 @@ energy grid system. Wind power forecasting has been widely recognized as one of 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/kdd_cup_wind/wind_park.jpg" title="wind farm" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">
+            Caption A
+        </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/kdd_cup_wind/turbine.gif" title="wind turbine" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    <div class="caption">
+            Caption B
+        </div>
 </div>
 
 Two interesting features are different from standard wind power forecasting scenarios:
