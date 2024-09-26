@@ -20,7 +20,7 @@ The competition's goal was to estimate the wind power supply of a wind farm at d
             A wind park illustration.
         </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-2 mt-md-0">
         {% include figure.liquid path="assets/img/kdd_cup_wind/turbine.gif" title="wind turbine" class="img-fluid rounded z-depth-1" %}
         <div class="caption">
             Components of a wind turbine.
