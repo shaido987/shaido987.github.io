@@ -54,7 +54,7 @@ The dataset includes:
 ## Proposed solution
 
 {% cite kalander2022wind %}
-{% cite Zeng2022AreTE --file references.bib %}
+{% reference Zeng2022AreTE --file references.bib %}
 
 <h2>References</h2>
 <div class="publications">
