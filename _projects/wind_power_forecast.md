@@ -56,5 +56,5 @@ The dataset includes:
 
 <h2>References</h2>
 <div class="publications">
-    {% bibliography --file references %}
+    {% bibliography --file references --cited_in_order %}
 </div>
