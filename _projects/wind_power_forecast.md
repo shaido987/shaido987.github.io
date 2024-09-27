@@ -98,7 +98,11 @@ From the SHAP values illustrated above, we can determine that not all features a
 - We directly remove the directional features _Wdir_ and _Ndir_ (wind direction and nacelle yaw).
 - We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
 
-Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to $$ Pab\_{max}=max(Pab1, Pab2, Pab3) $$.
+Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to 
+
+$$
+Pab\_{max}=max(Pab1, Pab2, Pab3).
+$$
 
 <h2>References</h2>
 <div class="publications">
