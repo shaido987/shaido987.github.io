@@ -12,6 +12,12 @@ github: https://github.com/shaido987/KDD_wind_power_forecast
 
 The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the wind power supply of a wind farm at different time scales. The variability of wind power presents substantial challenges in incorporating it into an energy grid system. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation.
 
+- The wind farm has 134 wind turbines.
+- Each wind turbine has a time series with 10-minute timesteps and 10 features.
+- At each timestep, the goal is to predict 0h to 48h into the future (288 steps). 
+- The wind turbines' location is known.
+- The competition had around 2500 registered teams.
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/kdd_cup_wind/wind_park.jpg" title="wind farm" class="img-fluid rounded z-depth-1" %}
