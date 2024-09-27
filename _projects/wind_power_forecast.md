@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d76ee41b-3d4c-4c1a-97f4-1855e7b524f2)---
+---
 layout: page
 title: Spatial Dynamic Wind Power Forecasting Challenge
 description: KDD Cup 2022 (6th place)
