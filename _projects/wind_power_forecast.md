@@ -85,6 +85,7 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
 {% comment %}
 Using the profile class here to left align the image without changing the sass
 {% endcomment %}
+
 <div class="profile float-right">
 	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
@@ -97,7 +98,7 @@ From the SHAP values illustrated above, we can determine that not all features a
 - We directly remove the directional features _Wdir_ and _Ndir_ (wind direction and nacelle yaw).
 - We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
 
-Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to $$ Pab_{max}=max(Pab1, Pab2, Pab3) $$.
+Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to $$ Pab\_{max}=max(Pab1, Pab2, Pab3) $$.
 
 <h2>References</h2>
 <div class="publications">
