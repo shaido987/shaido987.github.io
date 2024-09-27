@@ -137,6 +137,14 @@ $$
 
 where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the 𝑖-th wind turbine in $$ C $$. Note that _cluster\_avg_has the same value for all wind turbines within the same cluster at the same timestep.
 
+<div class="profile float-right">
+	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/multi_forecast.png" title="MDLinear train and forecast strategy" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		MDLinear train and forecast strategy.
+	</div>
+</div>
+
+Training a single model to make future forecasts is not always advantageous. Shortterm and long-term patterns can vastly differ and a model that focuses on the full horizon may fail to capture important short-term patterns. Therefore, in MDLinear, we train four separate models with increasing forecast horizons [72, 188, 216, 288] and merge these to create a final prediction. The last predicted 72 timesteps of each model are used. The figure to the right illustrates the procedure.
 
 ### XTGN: eXtreme Temporal Gated Network
 
