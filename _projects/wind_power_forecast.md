@@ -82,12 +82,22 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
     </div>
 </div>
 
-<div class="d-flex justify-content-end mt-3 mt-md-0">
+<div class="profile float-right">
+	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Feature correlation heatmap.
+	</div>
+</div>
+
+<!--
+<img class="preview float-right z-depth-1 rounded" src="{{ entry.preview }}">
+	<div class="d-flex justify-content-end mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
 		Feature correlation heatmap.
 	</div>
 </div>
+-->
 
 From the SHAP values illustrated above, we can determine that not all features are important.
 
