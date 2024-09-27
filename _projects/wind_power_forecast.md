@@ -1,4 +1,4 @@
----
+![image](https://github.com/user-attachments/assets/d76ee41b-3d4c-4c1a-97f4-1855e7b524f2)---
 layout: page
 title: Spatial Dynamic Wind Power Forecasting Challenge
 description: KDD Cup 2022 (6th place)
@@ -59,7 +59,7 @@ The solution we ended up proposing is detailed here {% cite kalander2022wind %} 
 
 Both models use a masked loss function that ignores missing, unknown, or abnormal values.
 
-### Preprocessing & Feature Engineering
+## Preprocessing & Feature Engineering
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -98,11 +98,53 @@ From the SHAP values illustrated above, we can determine that not all features a
 - We directly remove the directional features _Wdir_ and _Ndir_ (wind direction and nacelle yaw).
 - We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
 
-Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to 
+Moreover, looking at the feature correlation heatmap, we can immediatly see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to
 
 $$
-Pab\_{max}=max(Pab1, Pab2, Pab3).
+Pab_{max}=max(Pab1, Pab2, Pab3).
 $$
+
+This gives us a final feature set of five features: turbine ID, wind speed, maximum pitch angle, reactive power, and active power (also the target variable).
+
+## MDLinear: Modified DLinear
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/mdlinear.png" title="Overview of the MDLinear method." class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Overview of the MDLinear method.
+	</div>
+    </div>
+</div>
+
+The method is based on DLinear {% cite  Zeng2022AreTE --file references %} which is a simple but effective method that has been shown to outperform numerous transformer-based models on multiple time series forecasting tasks. By design, the method operates on univariate time series data. For multivariate time series, the forecasts of each feature are thus independent of the others. The method first decomposes the time series into trend and residual components. Two one-layer linear networks ($$ W_t $$ and $$ W_r $$) are then applied to the respective component before the two results are merged into a final forecast output.
+
+We modify DLinear to exploit all available information by adding an additional linear layer at the end to consolidate the information from all input features and denote our method MDLinear. The complete method design is illustrated in the above figure.
+
+<div class="profile float-right">
+	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/clusters_with_id2.png" title="Wind turbine cluster and ID assignments" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Wind turbine cluster and ID assignments.
+	</div>
+</div>
+
+We apply some additional feature engineering steps for MDLinear. The _TurbID_ is split into two separate features: _cluster_ and _ID_ by adhering to the wind turbines’ x-coordinates, while the 𝐼𝐷 is assigned
+based on the y-coordinates. A new feature is added, $$ cluster\_avg $$, with the average _Patv_ of each cluster. For cluster 𝑐 with a set of wind turbines $$ C $$, we have
+
+$$
+cluster\_avg_{c} = \frac{1}{n_c} \sum_{i=1}^{n_c} Patv^{C(i)},
+$$
+
+where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the 𝑖-th wind turbine in $$ C $$. Note that $$ cluster\_avg has the same value for all wind turbines within the same cluster at the same timestep.
+
+
+## XTGN: eXtreme Temporal Gated Network
+
+TODO
+
+## Fused model and results
+
+TODO
 
 <h2>References</h2>
 <div class="publications">
