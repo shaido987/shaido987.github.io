@@ -14,7 +14,7 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
 
 - The wind farm has 134 wind turbines.
 - Each wind turbine has a time series with 10-minute timesteps and 10 features.
-- At each timestep, the goal is to predict 0h to 48h into the future (288 steps). 
+- At each timestep, the goal is to predict 0h to 48h into the future (288 steps).
 - The wind turbines' location is known.
 - The competition had around 2500 registered teams.
 
@@ -89,7 +89,7 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
 </div>
 
 {% comment %}
-Using the profile class here to left align the image without changing the sass
+Using the profile class here to left align the image without changing the sass.
 {% endcomment %}
 
 <div class="profile float-right">
