@@ -50,7 +50,7 @@ The dataset includes:
 |      12      | Prtv (kW)       | Reactive power                                                           |
 |      13      | Patv (kW)       | Active power (target variable)                                           |
 
-## Proposed solution
+### Proposed solution
 
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
 
@@ -106,7 +106,7 @@ $$
 
 This gives us a final feature set of five features: turbine ID, wind speed, maximum pitch angle, reactive power, and active power (also the target variable).
 
-## MDLinear: Modified DLinear
+### MDLinear: Modified DLinear
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -129,20 +129,20 @@ We modify DLinear to exploit all available information by adding an additional l
 </div>
 
 We apply some additional feature engineering steps for MDLinear. The _TurbID_ is split into two separate features: _cluster_ and _ID_ by adhering to the wind turbines’ x-coordinates, while the 𝐼𝐷 is assigned
-based on the y-coordinates. A new feature is added, $$ cluster\_avg $$, with the average _Patv_ of each cluster. For cluster 𝑐 with a set of wind turbines $$ C $$, we have
+based on the y-coordinates. A new feature is added, _cluster\_avg_, with the average _Patv_ of each cluster. For cluster 𝑐 with a set of wind turbines $$ C $$, we have
 
 $$
 cluster\_avg_{c} = \frac{1}{n_c} \sum_{i=1}^{n_c} Patv^{C(i)},
 $$
 
-where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the 𝑖-th wind turbine in $$ C $$. Note that $$ cluster\_avg has the same value for all wind turbines within the same cluster at the same timestep.
+where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the 𝑖-th wind turbine in $$ C $$. Note that _cluster\_avg_has the same value for all wind turbines within the same cluster at the same timestep.
 
 
-## XTGN: eXtreme Temporal Gated Network
+### XTGN: eXtreme Temporal Gated Network
 
 TODO
 
-## Fused model and results
+### Fused model and results
 
 TODO
 
