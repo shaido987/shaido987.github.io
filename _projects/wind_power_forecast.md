@@ -108,6 +108,8 @@ This gives us a final feature set of five features: turbine ID, wind speed, maxi
 
 ### MDLinear: Modified DLinear
 
+The method is based on DLinear {% cite  Zeng2022AreTE --file references %} which is a simple but effective method that has been shown to outperform numerous transformer-based models on multiple time series forecasting tasks. By design, the method operates on univariate time series data. For multivariate time series, the forecasts of each feature are thus independent of the others. The method first decomposes the time series into trend and residual components. Two one-layer linear networks ($$ W_t $$ and $$ W_r $$) are then applied to the respective component before the two results are merged into a final forecast output.
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/mdlinear.png" title="Overview of the MDLinear method." class="img-fluid rounded z-depth-1" %}
@@ -116,8 +118,6 @@ This gives us a final feature set of five features: turbine ID, wind speed, maxi
 	</div>
     </div>
 </div>
-
-The method is based on DLinear {% cite  Zeng2022AreTE --file references %} which is a simple but effective method that has been shown to outperform numerous transformer-based models on multiple time series forecasting tasks. By design, the method operates on univariate time series data. For multivariate time series, the forecasts of each feature are thus independent of the others. The method first decomposes the time series into trend and residual components. Two one-layer linear networks ($$ W_t $$ and $$ W_r $$) are then applied to the respective component before the two results are merged into a final forecast output.
 
 We modify DLinear to exploit all available information by adding an additional linear layer at the end to consolidate the information from all input features and denote our method MDLinear. The complete method design is illustrated in the above figure.
 
