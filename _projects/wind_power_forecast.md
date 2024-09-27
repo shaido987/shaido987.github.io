@@ -54,8 +54,8 @@ The dataset includes:
 
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
 
-- Modified DLinear (MDLinear): An altered version of DLinear {% cite  Zeng2022AreTE --file references %}.
-- Extreme Temporal Gated Network (XTGN): based on stacking gated temporal convolutional networks (TCNs) {% cite  dauphin2017 lea2016tcn --file references %} and nearest neighbor information diffusion.
+- Modified DLinear (MDLinear): An altered version of DLinear {% cite Zeng2022AreTE --file references %}.
+- Extreme Temporal Gated Network (XTGN): based on stacking gated temporal convolutional networks (TCNs) {% cite dauphin2017 lea2016tcn --file references %} and nearest neighbor information diffusion.
 
 Both models use a masked loss function that ignores missing, unknown, or abnormal values.
 
@@ -108,7 +108,7 @@ This gives us a final feature set of five features: turbine ID, wind speed, maxi
 
 ### MDLinear: Modified DLinear
 
-The method is based on DLinear {% cite  Zeng2022AreTE --file references %} which is a simple but effective method that has been shown to outperform numerous transformer-based models on multiple time series forecasting tasks. By design, the method operates on univariate time series data. For multivariate time series, the forecasts of each feature are thus independent of the others. The method first decomposes the time series into trend and residual components. Two one-layer linear networks ($$ W_t $$ and $$ W_r $$) are then applied to the respective component before the two results are merged into a final forecast output.
+The method is based on DLinear {% cite Zeng2022AreTE --file references %} which is a simple but effective method that has been shown to outperform numerous transformer-based models on multiple time series forecasting tasks. By design, the method operates on univariate time series data. For multivariate time series, the forecasts of each feature are thus independent of the others. The method first decomposes the time series into trend and residual components. Two one-layer linear networks ($$ W_t $$ and $$ W_r $$) are then applied to the respective component before the two results are merged into a final forecast output.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -148,7 +148,24 @@ Training a single model to make future forecasts is not always advantageous. Sho
 
 ### XTGN: eXtreme Temporal Gated Network
 
-TODO
+The second part of our proposed solution is XGTN, inspired by the idea of converting a forecasting problem into a pattern-matching task. The dynamical chaotic grid system produces complicated features with sudden jumps and uncertain wind power generation with strong randomness, making it difficult to generate accurate forecasts. To quickly respond to varying wind power patterns and abruptly changes caused by external reasons such as wind turbine renovation or active power controlling, we apply a Temporal Convolutional Network (TCN) {% cite lea2016tcn --file references %} based framework to acquire the necessary information on existing representative patterns andthen generalize it for forecasting.
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/GTCN_Framework.png" title="The framework of XTGN." class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		The framework of XTGN.
+	</div>
+    </div>
+</div>
+
+In XTGN, the inputs are first transformed by the gated temporal convolution module (Gated TCN, detailed in the left part of the above figure) followed by a 2D convolutional layer and a linear layer. An information diffusion mechanism (shown in the dashed box) is performed only during the inference phase to get a reliable wind power prediction. To be specific, the obtained values from the last linear layer are corrected by a neighborhood aggregation to develop a more accurate prediction. Considering the observation that nearby wind turbines exhibit similar wind power patterns, it is natural to describe the underlying graph structure of the system using a distance matrix. Here, we generate a $$ k $$ nearest neighbor ($$ k $$-NN) graph based on the cosine similarity between the geographic location of each wind turbine pair.
+
+Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be: 
+
+$$
+\alpha \cdot Y + \frac{1−\alpha}{n} \sum_{v \in N(x)} v.
+$$
 
 ### Fused model and results
 
