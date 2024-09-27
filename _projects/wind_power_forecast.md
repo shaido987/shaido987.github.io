@@ -82,17 +82,18 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
     </div>
 </div>
 
+<div class="col-sm-4 align-self-end mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Feature correlation heatmap.
+	</div>
+</div>
+
 From the SHAP values illustrated above, we can determine that not all features are important.
 
 - We directly remove the directional features _Wdir_ (wind direction) and _Ndir_ (nacelle yaw).
 - We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
 
-<div class="col-sm-4 align-self-end mt-3 mt-md-0">
-	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
-	<div class="caption">
-		Feature correlation heatmap.
-	</div>
-</div>
 
 <h2>References</h2>
 <div class="publications">
