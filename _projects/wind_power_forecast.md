@@ -82,6 +82,7 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
     </div>
 </div>
 
+# Using the profile class here to left align the image without changing the sass
 <div class="profile float-right">
 	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/heatmap.png" title="Feature correlation heatmap" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
