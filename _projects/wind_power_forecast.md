@@ -144,11 +144,11 @@ where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C
 	</div>
 </div>
 
-Training a single model to make future forecasts is not always advantageous. Shortterm and long-term patterns can vastly differ and a model that focuses on the full horizon may fail to capture important short-term patterns. Therefore, in MDLinear, we train four separate models with increasing forecast horizons [72, 188, 216, 288] and merge these to create a final prediction. The last predicted 72 timesteps of each model are used. The figure to the right illustrates the procedure.
+Training a single model to make future forecasts is not always advantageous. Short-term and long-term patterns can vastly differ and a model that focuses on the full horizon may fail to capture important short-term patterns. Therefore, in MDLinear, we train four separate models with increasing forecast horizons [72, 188, 216, 288] and merge these to create a final prediction. The last predicted 72 timesteps of each model are used. The figure to the right illustrates the procedure.
 
 ### XTGN: eXtreme Temporal Gated Network
 
-The second part of our proposed solution is XGTN, inspired by the idea of converting a forecasting problem into a pattern-matching task. The dynamical chaotic grid system produces complicated features with sudden jumps and uncertain wind power generation with strong randomness, making it difficult to generate accurate forecasts. To quickly respond to varying wind power patterns and abruptly changes caused by external reasons such as wind turbine renovation or active power controlling, we apply a Temporal Convolutional Network (TCN) {% cite lea2016tcn --file references %} based framework to acquire the necessary information on existing representative patterns andthen generalize it for forecasting.
+The second part of our proposed solution is XGTN, inspired by the idea of converting a forecasting problem into a pattern-matching task. The dynamical chaotic grid system produces complicated features with sudden jumps and uncertain wind power generation with strong randomness, making it difficult to generate accurate forecasts. To quickly respond to varying wind power patterns and abrupt changes caused by external reasons such as wind turbine renovation or active power controlling, we apply a Temporal Convolutional Network (TCN) {% cite lea2016tcn --file references %} based framework to acquire the necessary information on existing representative patterns and then generalize it for forecasting.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -159,17 +159,44 @@ The second part of our proposed solution is XGTN, inspired by the idea of conver
     </div>
 </div>
 
-In XTGN, the inputs are first transformed by the gated temporal convolution module (Gated TCN, detailed in the left part of the above figure) followed by a 2D convolutional layer and a linear layer. An information diffusion mechanism (shown in the dashed box) is performed only during the inference phase to get a reliable wind power prediction. To be specific, the obtained values from the last linear layer are corrected by a neighborhood aggregation to develop a more accurate prediction. Considering the observation that nearby wind turbines exhibit similar wind power patterns, it is natural to describe the underlying graph structure of the system using a distance matrix. Here, we generate a $$ k $$ nearest neighbor ($$ k $$-NN) graph based on the cosine similarity between the geographic location of each wind turbine pair.
+In XTGN, the inputs are first transformed by the gated temporal convolution module (Gated TCN, detailed in the left part of the above figure) followed by a 2D convolutional layer and a linear layer. An information diffusion mechanism (shown in the dashed box) is performed only during inference to get a reliable wind power prediction. Specifically, a neighborhood aggregation corrects the values obtained from the last linear layer to develop a more accurate prediction. Considering the observation that nearby wind turbines exhibit similar wind power patterns, it is natural to describe the underlying graph structure of the system using a distance matrix. Here, we generate a $$ k $$ nearest neighbor ($$ k $$-NN) graph based on the cosine similarity between the geographic location of each wind turbine pair.
 
 Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be: 
-
 $$
 \alpha \cdot Y + \frac{1−\alpha}{n} \sum_{v \in N(x)} v.
 $$
 
 ### Fused model and results
 
-TODO
+<div class="profile float-right">
+	{% include figure.liquid loading="eager" path="assets/img/wind.png" title="A prediction for a single wind turbine at time t" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		A prediction for a single wind turbine at time $$ t $$.
+	</div>
+</div>
+
+We consolidate the predictions from MDLinear and XTGN into a fused forecast. We denote the predictions for a single wind turbine at timestep $$ t $$ as $$ Y^m \in \mathcal{R}^{288x1}$$ and $$ Y^t \in \mathcal{R}^{288x1}$$ for MDLinear and XTGN, respectively. We empirically found that a simple averaging of the two forecasts at each timestep achieves robust results, see the ablation in the below table. The fused forecast for each wind turbine is thus
+$$
+Y = \frac{Y^m + Y^t}{2}.
+$$
+The process is illustrated in Figure 7 which depicts a typical 288-length prediction for a single timestep of a single wind turbine.
+
+The final results of our method and various baselines as well as an ablation with various fusion strategies can be seen in the below tables. Our results ended up placing us 6th out of 2500 or so teams.
+
+<div class="row">
+    <div class="col-sm-5 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/scores.png" title="Offline scores and inference times for the methods" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Offline scores and inference times for the methods.
+	</div>
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/ablation.png" title="Different fusion strategies" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		Different fusion strategies. For the time splits, the method in parentheses is used for the first timesteps.
+	</div>
+    </div>
+</div>
 
 <h2>References</h2>
 <div class="publications">
