@@ -82,7 +82,7 @@ Both models use a masked loss function that ignores missing, unknown, or abnorma
     </div>
 </div>
 
-{% comment %} 
+{% comment %}
     Using the profile class here to left align the image without changing the sass
 {% endcomment %}
 <div class="profile float-right">
