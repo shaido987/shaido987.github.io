@@ -101,10 +101,10 @@ Using the profile class here to left align the image without changing the sass.
 
 From the SHAP values illustrated above, we can determine that not all features are important.
 
-- We directly remove the directional features _Wdir_ and _Ndir_ (wind direction and nacelle yaw).
-- We also remove all the temperature-related features: _Etmp_ and _Itmp_ (temperatures for the environment and inside the turbine).
+- We directly remove the directional features $$ Wdir $$ and $$ Ndir $$ (wind direction and nacelle yaw).
+- We also remove all the temperature-related features: $$ Etmp $$ and $$ Itmp $$ (temperatures for the environment and inside the turbine).
 
-Moreover, looking at the feature correlation heatmap, we can immediately see that the pitch angles (_Pab1_, _Pab2_, _Pab3_) are perfectly correlated. We merge these to
+Moreover, looking at the feature correlation heatmap, we can immediately see that the pitch angles ($$ Pab1 $$, $$ Pab2 $$, $$ Pab3 $$) are perfectly correlated. We merge these to
 
 $$
 Pab_{max}=max(Pab1, Pab2, Pab3).
@@ -134,14 +134,14 @@ We modify DLinear to exploit all available information by adding an additional l
 	</div>
 </div>
 
-We apply some additional feature engineering steps for MDLinear. The _TurbID_ is split into two separate features: _cluster_ and _ID_ by adhering to the wind turbines’ x-coordinates, while the 𝐼𝐷 is assigned
-based on the y-coordinates. A new feature is added, _cluster_avg_, with the average _Patv_ of each cluster. For cluster $$ c $$ with a set of wind turbines $$ C $$, we have
+We apply some additional feature engineering steps for MDLinear. The _TurbID_ is split into two separate features: $$ cluster $$ and $$ ID $$ by adhering to the wind turbines’ x-coordinates, while the $$ ID $$ is assigned
+based on the y-coordinates. Moreover, a new feature is added, $$ cluster\_avg $$, with the average $$ Patv $$ of each cluster. For cluster $$ c $$ with a set of wind turbines $$ C $$, we have
 
 $$
 cluster\_avg_{c} = \frac{1}{n_c} \sum_{i=1}^{n_c} Patv^{C(i)},
 $$
 
-where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the $$ I $$-th wind turbine in $$ C $$. Note that _cluster_avg_ has the same value for all wind turbines within the same cluster at the same timestep.
+where $$ n_c $$ is the number of wind turbines in cluster $$ c $$ and $$ Patv^{C(i)} $$ the wind power of the $$ i $$-th wind turbine in $$ C $$. Note that $$ cluster\_avg $$ has the same value for all wind turbines within the same cluster at the same timestep.
 
 <div class="profile float-right">
 	{% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/multi_forecast.png" title="MDLinear train and forecast strategy" class="img-fluid rounded z-depth-1" %}
@@ -188,9 +188,9 @@ $$
 Y = \frac{Y^m + Y^t}{2}.
 $$
 
-The process is illustrated in Figure 7 which depicts a typical 288-length prediction for a single timestep of a single wind turbine.
+The process is illustrated in the figure to the right, which depicts a typical 288-length prediction for a single timestep of a single wind turbine.
 
-The final results of our method and various baselines and ablation with various fusion strategies can be seen in the tables below. Our results ended up placing us 6th out of 2500 or so teams.
+The final results of our method and various baselines and ablation with various fusion strategies can be seen in the tables below. **Our results ended up placing us 6th out of 2500 or so teams.**
 
 <div class="row">
     <div class="col-sm-5 mt-3 mt-md-0">
