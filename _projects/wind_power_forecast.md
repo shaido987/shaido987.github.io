@@ -167,7 +167,8 @@ The second part of our proposed solution is XGTN, inspired by the idea of conver
 
 In XTGN, the inputs are first transformed by the gated temporal convolution module (Gated TCN, detailed in the left part of the above figure) followed by a 2D convolutional layer and a linear layer. An information diffusion mechanism (shown in the dashed box) is performed only during inference to get a reliable wind power prediction. Specifically, a neighborhood aggregation corrects the values obtained from the last linear layer to develop a more accurate prediction. Considering the observation that nearby wind turbines exhibit similar wind power patterns, it is natural to describe the underlying graph structure of the system using a distance matrix. Here, we generate a $$ k $$ nearest neighbor ($$ k $$-NN) graph based on the cosine similarity between the geographic location of each wind turbine pair.
 
-Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be: 
+Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be:
+
 $$
 \alpha \cdot Y + \frac{1−\alpha}{n} \sum_{v \in N(x)} v.
 $$
@@ -175,16 +176,18 @@ $$
 ### Fused model and results
 
 <div class="profile float-right">
-	{% include figure.liquid loading="eager" path="assets/img/wind.png" title="A prediction for a single wind turbine at time t" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="assets/img/publication_preview/wind.png" title="A prediction for a single wind turbine" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
-		A prediction for a single wind turbine at time $$ t $$.
+		A prediction for a single wind turbine at time t.
 	</div>
 </div>
 
 We consolidate the predictions from MDLinear and XTGN into a fused forecast. We denote the predictions for a single wind turbine at timestep $$ t $$ as $$ Y^m \in \mathcal{R}^{288x1}$$ and $$ Y^t \in \mathcal{R}^{288x1}$$ for MDLinear and XTGN, respectively. We empirically found that a simple averaging of the two forecasts at each timestep achieves robust results, see the ablation in the below table. The fused forecast for each wind turbine is thus
+
 $$
 Y = \frac{Y^m + Y^t}{2}.
 $$
+
 The process is illustrated in Figure 7 which depicts a typical 288-length prediction for a single timestep of a single wind turbine.
 
 The final results of our method and various baselines as well as an ablation with various fusion strategies can be seen in the below tables. Our results ended up placing us 6th out of 2500 or so teams.
