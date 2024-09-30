@@ -56,7 +56,7 @@ The dataset includes:
 |      12      | Prtv (kW)       | Reactive power                                                           |
 |      13      | Patv (kW)       | Active power (target variable)                                           |
 
-### Proposed solution
+## Proposed solution
 
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
 
