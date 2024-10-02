@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Spatial Dynamic Wind Power Forecasting Challenge
+title: Wind Power Forecasting
 description: KDD Cup 2022 (6th place)
 img: assets/img/kdd_cup_wind/kdd_cup_wind_start_page.png
 importance: 2
