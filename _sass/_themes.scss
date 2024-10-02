@@ -58,6 +58,13 @@
     display: none;
   }
 
+  .flair-img-light {
+    display: block;
+  }
+  .flair-img-dark {
+    display: none;
+  }
+
   #back-to-top {
     color: var(--global-back-to-top-text-color);
     background: var(--global-back-to-top-bg-color);
