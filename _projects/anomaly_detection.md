@@ -2,7 +2,7 @@
 layout: page
 title: Multi-dataset Time Series Anomaly Detection Competition
 description: KDD Cup 2021 (2th place)
-img: assets/img/kdd_cup_anomaly_detection.png
+img: assets/img/anomaly_detection/kdd_cup_anomaly.png
 importance: 1
 category: competitions
 ---
