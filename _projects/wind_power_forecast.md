@@ -167,7 +167,7 @@ The second part of our proposed solution is XGTN, inspired by the idea of conver
 
 In XTGN, the inputs are first transformed by the gated temporal convolution module (Gated TCN, detailed in the left part of the above figure) followed by a 2D convolutional layer and a linear layer. An information diffusion mechanism (shown in the dashed box) is performed only during inference to get a reliable wind power prediction. Specifically, a neighborhood aggregation corrects the values obtained from the last linear layer to develop a more accurate prediction. Considering the observation that nearby wind turbines exhibit similar wind power patterns, it is natural to describe the underlying graph structure of the system using a distance matrix. Here, we generate a $$ k $$ nearest neighbor ($$ k $$-NN) graph based on the cosine similarity between the geographic location of each wind turbine pair.
 
-Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be:
+Considering this, the final output for wind turbine $$ x $$ with forecast $$ Y $$ will be
 
 $$
 \alpha \cdot Y + \frac{1−\alpha}{n} \sum_{v \in N(x)} v.
