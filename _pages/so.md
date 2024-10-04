@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SO <i class="fa-brands fa-stack-overflow"></i>
+title: SO
 permalink: /stackoverflow/
 nav: true
 nav_order: 5
