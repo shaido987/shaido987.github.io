@@ -18,22 +18,31 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
 - The wind turbines' location is known.
 - The competition had around 2500 registered teams.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/kdd_cup_wind/wind_park.jpg" title="wind farm" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">
-            A wind park illustration.
-        </div>
+## Proposed solution
+
+<div class="row">
+	<div class="caption">
+		Feature importance (SHAP values) for different time horizons.
+	</div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Immediate forecast" class="img-fluid rounded z-depth-1" %}
+		<div class="caption">
+			Immediate forecast
+		</div>
     </div>
-    <div class="col-sm-5 mt-2 mt-md-0">
-        {% include figure.liquid path="assets/img/kdd_cup_wind/turbine.gif" title="wind turbine" class="img-fluid rounded z-depth-1" %}
-        <div class="caption">
-            Components of a wind turbine.
-        </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_shift_144.png" title="One-day future forecast" class="img-fluid rounded z-depth-1" %}
+		<div class="caption">
+			One-day future forecast
+		</div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_shift_288.png" title="Two-day future forecast" class="img-fluid rounded z-depth-1" %}
+		<div class="caption">
+			Two-day future forecast
+		</div>
     </div>
 </div>
-
-## Proposed solution
 
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
 
