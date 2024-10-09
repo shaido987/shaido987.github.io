@@ -21,9 +21,6 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
 ## Proposed solution
 
 <div class="row">
-	<div class="caption">
-		Feature importance (SHAP values) for different time horizons.
-	</div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Immediate forecast" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
