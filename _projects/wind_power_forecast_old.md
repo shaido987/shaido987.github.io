@@ -1,13 +1,3 @@
-<!-- ---
-layout: page
-title: Wind Power Forecasting
-description: KDD Cup 2022 (6th place)
-img: assets/img/kdd_cup_wind/kdd_cup_wind_start_page.png
-importance: 2
-category: competitions
-github: https://github.com/shaido987/KDD_wind_power_forecast
----
--->
 ## Challenge details
 
 The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the wind power supply of a wind farm at different time scales. The variability of wind power presents substantial challenges in incorporating it into an energy grid system. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation.
