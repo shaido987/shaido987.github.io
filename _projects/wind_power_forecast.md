@@ -18,8 +18,6 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
 - The wind turbines' locations are known.
 - The competition had around 2500 registered teams.
 
-## Proposed solution
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Immediate forecast" class="img-fluid rounded z-depth-1" %}
@@ -39,6 +37,17 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
 			Two-day future forecast
 		</div>
     </div>
+		<div class="caption">
+			Feature importance at different forecast horizons as illustrated with SHAP values.
+		</div>
+</div>
+
+## Proposed solution
+<div class="profile float-right">
+	{% include figure.liquid loading="eager" path="assets/img/publication_preview/wind.png" title="A prediction for a single wind turbine" class="img-fluid rounded z-depth-1" %}
+	<div class="caption">
+		A prediction for a single wind turbine at time t.
+	</div>
 </div>
 
 The solution we ended up proposing is detailed here {% cite kalander2022wind %} with a short presentation available on [youtube](https://www.youtube.com/watch?v=6fPL44g5h-c). In short, it's a fusion of two different models:
@@ -48,12 +57,7 @@ The solution we ended up proposing is detailed here {% cite kalander2022wind %} 
 
 Both models use a masked loss function that ignores missing, unknown, or abnormal values. **Our results ended up placing us 6th out of 2500 or so teams.**
 
-<div class="profile float-right">
-	{% include figure.liquid loading="eager" path="assets/img/publication_preview/wind.png" title="A prediction for a single wind turbine" class="img-fluid rounded z-depth-1" %}
-	<div class="caption">
-		A prediction for a single wind turbine at time t.
-	</div>
-</div>
+
 
 <h2>References</h2>
 <div class="publications">
