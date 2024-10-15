@@ -60,4 +60,3 @@ The expert is deemed confident as $$ 4.745 > 1 $$ and the anomaly prediction is 
 			Base algorithms to be used as experts.
 		</div>
 </div>
-
