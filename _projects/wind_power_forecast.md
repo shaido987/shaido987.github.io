@@ -22,24 +22,24 @@ The [competition](https://baidukddcup2022.github.io/)'s goal was to estimate the
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Immediate forecast" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
-			Immediate forecast
+			Immediate forecast.
 		</div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_shift_144.png" title="One-day future forecast" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
-			One-day future forecast
+			One-day future forecast.
 		</div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_shift_288.png" title="Two-day future forecast" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
-			Two-day future forecast
+			Two-day future forecast.
 		</div>
     </div>
-		<div class="caption">
-			Feature importance at different forecast horizons as illustrated with SHAP values.
-		</div>
+</div>
+<div class="caption">
+	Feature importance at different forecast horizons as illustrated with SHAP values.
 </div>
 
 ## Proposed solution
