@@ -57,7 +57,7 @@ The expert is deemed confident as $$ 4.745 > 1 $$ and the anomaly prediction is 
 
 <div class="row">
     <div class="col-sm mt-5 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/kdd_cup_wind/shap_no_shift.png" title="Base algorithms" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/anomlay_detection/base_algos.png" title="Base algorithms" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
 			Base algorithms to be used as experts.
 		</div>
