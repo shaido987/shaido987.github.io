@@ -20,11 +20,13 @@ The [competition](https://compete.hexagon-ml.com/practice/competition/39/) consi
 
 We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A youtube video is available for a short solution overview: https://www.youtube.com/watch?v=4PdlUcmwWu0
 
-<div class="profile float-right">
-	{% include figure.liquid loading="eager" path="assets/img/anomaly_detection/solution.png" title="Solution overview" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-5 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/anomaly_detection/solution.png" title="Solution overview" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
 		Mixture-of-experts solution overview.
 	</div>
+    </div>
 </div>
 
 For our multi-method solution to work, there are a few key components:
@@ -46,8 +48,8 @@ We compute the confidence level by considering the difference between the maximu
 
 Illustration from the example in the figure:
 
-Difference: $$ \frac{max⁡\(anomaly scores\)}{(sec_max⁡\(anomaly scores\)} − 1 = \frac{\(12.338−5.091\)}{5.091} = 1.423 $$  
-Confidence (with a threshold of $$ 0.3 $$): $$ \frac{𝑑𝑖𝑓𝑓𝑒𝑟𝑒𝑛𝑐𝑒}{𝑡ℎ𝑟𝑒𝑠ℎ𝑜𝑙𝑑} = \frac{1.423}{0.3} = 4.745 $$
+Difference: $$ \frac{max⁡(anomaly scores)}{(sec_max(anomaly scores)} − 1 = \frac{12.338−5.091}{5.091} = 1.423 $$  
+Confidence (with a threshold of $$ 0.3 $$): $$ \frac{difference}{threshold} = \frac{1.423}{0.3} = 4.745 $$
 
 The expert is deemed confident as $$ 4.745 > 1 $$ and the anomaly prediction is this used.
 
