@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Timeseries Anomaly Detection
-description: KDD Cup 2021 (2th place)
+description: KDD Cup 2021 (2nd place)
 img: assets/img/anomaly_detection/kdd_cup_anomaly.png
 importance: 1
 category: competitions
