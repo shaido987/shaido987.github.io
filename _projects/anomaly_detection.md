@@ -18,10 +18,10 @@ The [competition](https://compete.hexagon-ml.com/practice/competition/39/) consi
 
 ## Proposed solution
 
-We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A youtube video is available for a short solution overview: https://www.youtube.com/watch?v=4PdlUcmwWu0
+We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A youtube video is available for a short solution overview: [here](https://www.youtube.com/watch?v=4PdlUcmwWu0).
 
 <div class="row">
-    <div class="col-sm mt-5 mt-md-0">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/anomaly_detection/solution.png" title="Solution overview" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
 		Mixture-of-experts solution overview.
@@ -57,7 +57,7 @@ The expert is deemed confident as $$ 4.745 > 1 $$ and the anomaly prediction is 
 
 <div class="row">
     <div class="col-sm mt-5 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/anomlay_detection/base_algos.png" title="Base algorithms" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/anomaly_detection/base_algos.png" title="Base algorithms" class="img-fluid rounded z-depth-1" %}
 		<div class="caption">
 			Base algorithms to be used as experts.
 		</div>
