@@ -12,13 +12,13 @@ category: competitions
 The [competition](https://compete.hexagon-ml.com/practice/competition/39/) considers numerous, highly different, time series from various sources and the task was to detect anomalies in these. Univariate time series detection is often highly dataset-dependent and what algorithms will work for a particular dataset is non-obvious. The competition and accompanying dataset were released to encourage academia and industry to work towards a more general solution that applies to various anomaly detection scenarios.
 
 - 250 different time series datasets with highly varied characteristics.
-- Each time series is partitioned into train and test data. The train data is guaranteed to not contain any anomalies while the test data has exactly 1 anomaly.
+- Each time series is partitioned into train and test data. The train data is guaranteed not to contain any anomalies while the test data has exactly 1 anomaly.
 - Each time series has a single dimension (univariate).
 - No labels are given for the duration of the competition.
 
 ## Proposed solution
 
-We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A youtube video is available for a short solution overview: [here](https://www.youtube.com/watch?v=4PdlUcmwWu0).
+We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A YouTube video is available for a short solution overview: [here](https://www.youtube.com/watch?v=4PdlUcmwWu0).
 
 <div class="row">
     <div class="col-sm-5 mt-3 mt-md-0">
@@ -32,8 +32,8 @@ We applied a set of algorithms, each specialized on a specific type of anomaly (
 For our multi-method solution to work, there are a few key components:
 
 - Measurement of confidence levels for method selection.
-- Period inference: all the time series in the data are periodical (although it can be irregular and there can be multiple patterns). For simplicity we base most model parameters on an inferred period. In this way, two time series that have the same shape but different sampling rates are treated the same.
-- Ensemble learning: the period inference is not perfect and there is no guarantee that using the model parameters based on the period is the best possible selection. In some of the base methods, we therefore try a set of periods based on the inferred period $$ p: \{f \cdot p \| f \in \matcal{F} \} $$, where $$ \mathcal{F} $$ is a set of multipliers. For example: Time series $$ T $$ has an inferred period $$ 𝑝=128 $$ and method $$ A $$ considers the set of multipliers $$ \mathcal{F}={0.5, 1.0, 2.0} $$. We then run method $$ A $$ with periods $$ {64, 128, 256} $$ and selects the result with the highest confidence score.
+- Period inference: all the time series in the data are periodical (although it can be irregular and there can be multiple patterns). For simplicity, we base most model parameters on an inferred period. In this way, two time series that have the same shape but different sampling rates are treated the same.
+- Ensemble learning: the period inference is not perfect and there is no guarantee that using the model parameters based on the period is the best possible selection. In some of the base methods, we therefore try a set of periods based on the inferred period $$ p: \{f \cdot p \| f \in \mathcal{F} \} $$, where $$ \mathcal{F} $$ is a set of multipliers. For example: Time series $$ T $$ has an inferred period $$ 𝑝=128 $$ and method $$ A $$ considers the set of multipliers $$ \mathcal{F}=\{0.5, 1.0, 2.0\} $$. We then run method $$ A $$ with periods $$ \{64, 128, 256\} $$ and select the result with the highest confidence score.
 
 ### Confidence level
 
