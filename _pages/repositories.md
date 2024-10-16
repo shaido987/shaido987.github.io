@@ -2,12 +2,12 @@
 layout: page
 permalink: /repositories/
 title: Code
-description: You can find implementations for some recent projects below.
+description: 
 nav: true
 nav_order: 4
 ---
 
-All open-sourced code that I create can be found on [GitHub](https://github.com/shaido987). Some repositories are shown down below.
+All open-sourced code that I create can be found on [GitHub](https://github.com/shaido987). Some recent project repositories are shown down below.
 
 {% if site.data.repositories.github_users %}
 
