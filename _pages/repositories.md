@@ -19,7 +19,7 @@ nav_order: 4
 
 ## Stack Overflow
 
-In addition to open-source code on GitHub, I've spent some time on Stack Overflow answering questions in subjects I'm familiar with (mainly Apache-spark, scala, and python-related subjects). I see it as a way of giving back to the larger community as Stack Overflow is an indispensable website in my day-to-day work.
+In addition to open-source code on GitHub, I've spent some time on [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) answering questions in subjects I'm familiar with (mainly Apache-spark, scala, and python-related subjects). I see it as a way of giving back to the larger community as Stack Overflow is an indispensable website in my day-to-day work.
 
 <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="208" height="58" alt="profile for Shaido at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Shaido at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
 
