@@ -17,25 +17,11 @@ nav_order: 4
   {% endfor %}
 </div>
 
----
+## Stack Overflow
 
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
+In addition to open-source code on GitHub, I've spent some time on Stack Overflow answering questions in subjects I'm familiar with (mainly Apache-spark, scala, and python-related subjects). I see it as a way of giving back to the larger community as Stack Overflow is an indispensable website in my day-to-day work.
 
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
+<a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="208" height="58" alt="profile for Shaido at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Shaido at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
 
 ## GitHub Repositories
 
