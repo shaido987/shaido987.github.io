@@ -25,6 +25,8 @@
 "wang":
   - firstname: ["Qizhou", "Q"]
     url: https://qizhouwang.github.io/homepage/
+  - firstname: ["Pinghui", "P"]
+    url: http://nskeylab.xjtu.edu.cn/people/phwang/
 
 "liu":
   - firstname: ["Tongliang", "T"]
@@ -53,3 +55,15 @@
 "lee":
   - firstname: ["Patrick PC", "Patrick P.C.", "P"]
     url: https://www.cse.cuhk.edu.hk/~pclee/www/index.html
+
+"pan":
+  - firstname: ["Lujia", "L"]
+    url: https://scholar.google.com/citations?user=qnUAFa8AAAAJ
+
+"zhang":
+  - firstname: ["Keli", "K"]
+    url: 
+
+"zhou":
+  - firstman: ["Min", "M"]
+    url: https://scholar.google.com/citations?user=P8WYyYIAAAAJ
