@@ -33,7 +33,7 @@ For our multi-method solution to work, there are a few key components:
 
 - Measurement of confidence levels for method selection.
 - Period inference: all the time series in the data are periodical (although it can be irregular and there can be multiple patterns). For simplicity we base most model parameters on an inferred period. In this way, two time series that have the same shape but different sampling rates are treated the same.
-- Ensemble learning: the period inference is not perfect and there is no guarantee that using the model parameters based on the period is the best possible selection. In some of the base methods, we therefore try a set of periods based on the inferred period $$ p: {f \cdot p | f \in \matcal{F} } $$, where $$ \mathcal{F} $$ is a set of multipliers. For example: Time series $$ T $$ has an inferred period $$ 𝑝=128 $$ and method $$ A $$ considers the set of multipliers $$ \mathcal{F}={0.5, 1.0, 2.0} $$. We then run method $$ A $$ with periods $$ {64, 128, 256} $$ and selects the result with the highest confidence score.
+- Ensemble learning: the period inference is not perfect and there is no guarantee that using the model parameters based on the period is the best possible selection. In some of the base methods, we therefore try a set of periods based on the inferred period $$ p: \{f \cdot p \| f \in \matcal{F} \} $$, where $$ \mathcal{F} $$ is a set of multipliers. For example: Time series $$ T $$ has an inferred period $$ 𝑝=128 $$ and method $$ A $$ considers the set of multipliers $$ \mathcal{F}={0.5, 1.0, 2.0} $$. We then run method $$ A $$ with periods $$ {64, 128, 256} $$ and selects the result with the highest confidence score.
 
 ### Confidence level
 
