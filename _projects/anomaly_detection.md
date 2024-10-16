@@ -20,9 +20,9 @@ The [competition](https://compete.hexagon-ml.com/practice/competition/39/) consi
 
 We applied a set of algorithms, each specialized on a specific type of anomaly (discrete, spike, discord, variance, etc.), in a fixed order until a confident prediction was made. Those algorithms that focused on easier anomaly types and those that were more conservative were used first. **Our solution placed 2nd out of 624 teams.** A YouTube video is available for a short solution overview [here](https://www.youtube.com/watch?v=4PdlUcmwWu0).
 
-<div class="row">
-    <div class="col-sm-5 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/anomaly_detection/solution.png" title="Solution overview" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+	{% include figure.liquid loading="eager" path="assets/img/anomaly_detection/solution.png" title="Solution overview" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
 		Mixture-of-experts solution overview.
 	</div>
