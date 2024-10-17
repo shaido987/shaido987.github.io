@@ -23,7 +23,7 @@ All of my open-sourced code can be found on [GitHub](https://github.com/shaido98
 
 ---
 
-In addition to open-source code on GitHub, I've spent some time on [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) answering questions in subjects I'm familiar with (mainly Apache-spark, scala, and python-related subjects). It is a way of giving back to the larger community as Stack Overflow is an indispensable website in my day-to-day work. I also participate on other Stack Exchange sites to a lesser degree.
+In addition to open-source code on GitHub, I've spent some time on [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) answering questions in subjects I'm familiar with (mainly Apache-spark, Scala, and Python-related subjects). I see it is a way of giving back to the larger community, as Stack Overflow is an indispensable website in my day-to-day work. I also participate on other Stack Exchange sites to a lesser degree.
 
 <div class="row justify-content-sm-center">
   <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="416" height="116" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
