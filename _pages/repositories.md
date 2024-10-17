@@ -11,14 +11,12 @@ nav_order: 4
 
 All open-sourced code that I create can be found on [GitHub](https://github.com/shaido987). A couple of recent project repositories are shown down below.
 
-<div class="row justify-content-sm-center">
-  {% if site.data.repositories.github_users %}
-  
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-    {% for user in site.data.repositories.github_users %}
-      {% include repository/repo_user.liquid username=user %}
-    {% endfor %}
-  </div>
+{% if site.data.repositories.github_users %}
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-sm-center align-items-center">
+  {% for user in site.data.repositories.github_users %}
+    {% include repository/repo_user.liquid username=user %}
+  {% endfor %}
 </div>
 
 ## Stack Overflow
