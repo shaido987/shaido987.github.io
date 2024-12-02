@@ -6,6 +6,7 @@ img: assets/img/kdd_cup_wind/kdd_cup_wind_start_page.png
 importance: 2
 category: competitions
 github: https://github.com/shaido987/KDD_wind_power_forecast
+github_stars: true
 ---
 
 ## Challenge details
