@@ -13,8 +13,6 @@ My research publications and preprints. For the latest updates, check out <a hre
 
 <!-- Bibsearch Feature -->
 
-{% include bib_search.liquid %}
-
 <div class="publications">
 
 {% bibliography %}
