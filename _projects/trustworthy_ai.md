@@ -2,7 +2,7 @@
 layout: page
 title: TrustworthyAI
 description: Maintainer of the TrustworthAI repository for Noah's Ark Lab
-img: assets/img/noahs_ark_icon.png
+img: assets/img/noahs_ark_icon_small.png
 importance: 1
 category: causality
 related_publications: true
