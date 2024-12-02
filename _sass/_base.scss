@@ -682,7 +682,7 @@ footer.sticky-bottom {
       text-align: center;
       white-space: nowrap;
       vertical-align: baseline;
-      border-radius: 0.5rem;
+      border-radius: 0.25rem;
       transition:
         color 0.15s ease-in-out,
         background-color 0.15s ease-in-out,
@@ -696,6 +696,7 @@ footer.sticky-bottom {
 
       span {
         padding-left: 0.1rem;
+        padding-top: 0.5rem;
         color: white !important;
       }
     }
