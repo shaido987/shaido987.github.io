@@ -675,6 +675,7 @@ footer.sticky-bottom {
 
     .stars {
       display: inline-block;
+      margin-top: 0.5rem;
       padding: 0.25em 0.4em;
       font-size: 75%;
       font-weight: 700;
@@ -691,7 +692,7 @@ footer.sticky-bottom {
       background-color: #b71c1c !important;
       color: #fff !important;
       position: relative;
-      top: -50px;
+      top: -75px;
       left: 20px;
 
       span {
