@@ -27,10 +27,10 @@ In addition to open-source code on GitHub, I've spent some time on [Stack Overfl
 
 <div class="container">
   <div class="row-md-2 px-md-1 justify-content-center">
-    <div class="cols">
+    <div class="col">
       <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
     </div>
-    <div class="cols">
+    <div class="col">
     <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>
     </div>
   </div>
