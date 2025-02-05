@@ -27,10 +27,10 @@ In addition to open-source code on GitHub, I've spent some time on [Stack Overfl
 
 <div class="row px-md-1 justify-content-sm-center">
   <a href="https://stackoverflow.com/users/7579547/shaido">
-    <img class="so-flair" src="https://stackoverflow.com/users/flair/7579547.png" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow">
+    <img src="https://stackoverflow.com/users/flair/7579547.png" style="width: 100%; max-width: 400px; height: auto;" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow">
   </a>
   <a href="https://stackexchange.com/users/10271255">
-    <img class="so-flair" src="https://stackexchange.com/users/flair/10271255.png" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange">
+    <img src="https://stackexchange.com/users/flair/10271255.png" style="width: 100%; max-width: 400px; height: auto;" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange">
   </a>
 </div>
 
