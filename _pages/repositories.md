@@ -26,13 +26,8 @@ My open-sourced code can be found on [GitHub](https://github.com/shaido987). Bel
 In addition to open-source code on GitHub, I've spent some time on [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) answering questions in subjects I'm familiar with (mainly Apache-spark, Scala, and Python-related subjects). I see it as a way of giving back to the larger community, as Stack Overflow is an indispensable website in my day-to-day work. I also participate on other Stack Exchange sites to a lesser degree.
 
 <div class="row px-md-1 justify-content-sm-center">
-  <a href="https://stackoverflow.com/users/7579547/shaido">
-    <img src="https://stackoverflow.com/users/flair/7579547.png" style="width: 100%; max-width: 400px; height: auto;" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow">
-  </a>
-  <a href="https://stackexchange.com/users/10271255">
-    <img src="https://stackexchange.com/users/flair/10271255.png" style="width: 100%; max-width: 400px; height: auto;" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange">
-  </a>
-</div>
+  <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
+  <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>
 
 ## GitHub Repositories
 
