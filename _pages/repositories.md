@@ -27,7 +27,8 @@ In addition to open-source code on GitHub, I've spent some time on [Stack Overfl
 
 <div class="row px-md-1 justify-content-sm-center">
   <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
-  <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>
+  <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>  
+</div>
 
 ## GitHub Repositories
 
