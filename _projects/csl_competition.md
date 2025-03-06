@@ -13,7 +13,6 @@ The goal of this competition was to address a causal structure learning problem 
 
 There has been growing interest in approaching the RCA problem from a causal perspective - specifically, by learning a causal graph that models alarm relationships and applying decision-making techniques (such as causal effect estimation and counterfactual inference) to identify the root cause of a fault. A typical RCA solution for telecommunication networks is illustrated in the figure below.
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/rca_solution.png" title="RCA solution" class="img-fluid rounded z-depth-1" %}
@@ -25,4 +24,4 @@ There has been growing interest in approaching the RCA problem from a causal per
 
 Participants in the competition were tasked with using historical alarm data, device topology, and prior knowledge (when available) to learn a causal graph for the alarm types in each provided dataset. Each learned causal graph was represented as a binary adjacency matrix, with ground truth graphs either manually labeled by domain experts or, in the case of synthetic datasets, derived from predefined causal assumptions.
 
-To conclude the competition, we organized a [virtual workshop at NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582), titled "Causal Structure Learning from Event Sequences and Prior Knowledge". This workshop, co-organized with a team of experts, provided a platform to showcase the competition outcomes. The event featured presentations by the top six winning teams 
+To conclude the competition, we organized a [virtual workshop at NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582), titled "Causal Structure Learning from Event Sequences and Prior Knowledge". This workshop, co-organized with a team of experts, provided a platform to showcase the competition outcomes. The event featured presentations by the top six winning teams.
