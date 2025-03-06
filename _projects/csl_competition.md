@@ -13,7 +13,7 @@ The goal of this competition was to solve a causal structure learning problem in
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/rca_solution.png.jpg" title="RCA solution" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/rca_solution.png" title="RCA solution" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
