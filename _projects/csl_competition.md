@@ -23,8 +23,6 @@ There has been growing interest in approaching the RCA problem from a causal per
     An RCA solution in a telecommunication network.
 </div>
 
-The goal of the participants was, given a series of datasets, that for each dataset use the historical alarm data, device topology, and prior knowledge (if available) to learn a causal graph for the involved alarm types. Each learned causal graph is represented by a binary adjacency matrix and the ground truth graphs are manually labeled by experts or, for synthetic datasets, pre-set causal assumptions.
-
 Participants in the competition were tasked with using historical alarm data, device topology, and prior knowledge (when available) to learn a causal graph for the alarm types in each provided dataset. Each learned causal graph was represented as a binary adjacency matrix, with ground truth graphs either manually labeled by domain experts or, in the case of synthetic datasets, derived from predefined causal assumptions.
 
 To conclude the competition, we organized a [virtual workshop at NeurIPS 2023](https://nips.cc/virtual/2023/competition/66582), titled "Causal Structure Learning from Event Sequences and Prior Knowledge". This workshop, co-organized with a team of experts, provided a platform to showcase the competition outcomes. The event featured presentations by the top six winning teams 
