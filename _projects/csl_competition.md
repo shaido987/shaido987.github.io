@@ -11,7 +11,7 @@ Co-organized a [causal structure learning competition](https://gcastle-hub.githu
 
 The goal of this competition was to address a causal structure learning problem in AIOps (Artificial Intelligence for IT Operations), with a focus on root cause analysis (RCA) in telecommunication networks. In such networks, anomalies are often detected through alarms. Due to the large-scale and interconnected nature of these networks, operators may face millions of alarms daily, as a single fault can trigger a cascade of diverse alarm types across multiple connected devices. The operators’ objective is to swiftly pinpoint the failure source to enable rapid repair and recovery. However, manually managing this volume of alarms is overwhelming, necessitating intelligent and efficient solutions.
 
-There has been growing interest in approaching the RCA problem from a causal perspective—specifically, by learning a causal graph that models alarm relationships and applying decision-making techniques (such as causal effect estimation and counterfactual inference) to identify the root cause of a fault. A typical RCA solution for telecommunication networks is illustrated in the figure below.
+There has been growing interest in approaching the RCA problem from a causal perspective - specifically, by learning a causal graph that models alarm relationships and applying decision-making techniques (such as causal effect estimation and counterfactual inference) to identify the root cause of a fault. A typical RCA solution for telecommunication networks is illustrated in the figure below.
 
 
 <div class="row">
