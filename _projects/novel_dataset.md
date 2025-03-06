@@ -20,4 +20,4 @@ github_stars: true
 
 This minor project emerged from my interest in generating unique graph-based datasets. It compiles a comprehensive dataset sourced from [NovelUpdates](https://www.novelupdates.com), focusing on translated novels. The dataset encompasses 21,831 English-translated novels originating from eight languages (Chinese, Japanese, Korean, Malaysian, Filipino, Indonesian, Khmer, and Thai) as of the latest update. It includes detailed individual novel statistics, such as chapter counts and rankings, as well as relational data linking novels to one another. These interconnections are particularly valuable, enabling the construction of intricate graph structures for analysis.
 
-The dataset and accompanying code are publicly available on [GitHub]((https://github.com/shaido987/novel-dataset)). I typically update the dataset annually to incorporate new novels and refresh existing information.
+The dataset and accompanying code are publicly available on [GitHub](https://github.com/shaido987/novel-dataset). I typically update the dataset annually to incorporate new novels and refresh existing information.
