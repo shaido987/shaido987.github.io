@@ -10,10 +10,10 @@ github: https://github.com/huawei-noah/trustworthyAI
 github_stars: true
 ---
 
-I co-maintain the [trustworthyAI](https://github.com/huawei-noah/trustworthyAI) repository for the Huawei Noah's Ark Lab, including [gCastle](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle) {% cite zhang2021gcastle %}, a causal structure learning toolchain.
+I co-maintain the [TrustworthyAI](https://github.com/huawei-noah/trustworthyAI) repository at Huawei Noah's Ark Lab, with a focus on [gCastle](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle) {% cite zhang2021gcastle %}, a comprehensive toolchain for causal structure learning.
 
-gCastle contains various functionalities related to causal learning and evaluation, including:
+gCastle offers a wide range of functionalities for causal learning and evaluation, including:
 
-- Data generation and processing: data simulation, data reading operators, and data pre-processing operators（such as prior injection and variable selection).
-- Causal structure learning: causal structure learning methods, including classic and recently developed methods, especially gradient-based ones that can handle large problems.
-- Evaluation metrics: various commonly used metrics for causal structure learning, including F1, SHD, FDR, TPR, FDR, NNZ, etc.
+- **Data Generation and Processing:** Tools for data simulation, data reading, and pre-processing, including operators for prior injection and variable selection.
+- **Causal Structure Learning:** A collection of algorithms for causal structure learning, encompassing both classic approaches and state-of-the-art gradient-based techniques, designed to scale effectively to large-scale problems.
+- **Evaluation Metrics:** A suite of widely adopted metrics for assessing causal structure learning performance, such as F1, SHD, FDR, TPR, and NNZ.
