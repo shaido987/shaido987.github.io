@@ -10,7 +10,7 @@ github: https://github.com/huawei-noah/trustworthyAI
 github_stars: true
 ---
 
-I co-maintain the [TrustworthyAI](https://github.com/huawei-noah/trustworthyAI) repository at Huawei Noah's Ark Lab, with a focus on [gCastle](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle) {% cite zhang2021gcastle %}, a comprehensive toolchain for causal structure learning.
+I co-maintain the [TrustworthyAI](https://github.com/huawei-noah/trustworthyAI) repository at Huawei Noah's Ark Lab, with a focus on [**gCastle**](https://github.com/huawei-noah/trustworthyAI/tree/master/gcastle) {% cite zhang2021gcastle %}, a comprehensive toolchain for causal structure learning.
 
 gCastle offers a wide range of functionalities for causal learning and evaluation, including:
 
