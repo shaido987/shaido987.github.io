@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Wind Power Forecasting
-description: Participated in the KDD Cup 2022 Spatial Dynamic Wind Power Forecasting Challenge (6th place)
+description: Participated in the KDD Cup 2022 Spatial Dynamic Wind Power Forecasting challenge (6th place)
 img: assets/img/kdd_cup_wind/kdd_cup_wind_start_page.png
 importance: 2
 category: competitions
