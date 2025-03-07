@@ -18,7 +18,6 @@ Key details of the challenge include:
 - All time series are univariate (single-dimensional).
 - No anomaly labels were provided during the competition.
 
-
 ## Proposed Solution
 
 Our approach utilized a mixture-of-experts framework, applying a sequence of specialized algorithms, each tailored to detect specific types of anomalies (e.g., discrete, spike, discord, variance). These algorithms were applied in a fixed order, prioritizing those targeting simpler anomaly types and those with more conservative predictions, until a confident prediction was achieved. Our solution secured 2nd place out of 624 competing teams. A brief overview of our approach is available in a [YouTube video](https://www.youtube.com/watch?v=4PdlUcmwWu0).
