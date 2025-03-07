@@ -41,7 +41,7 @@ Key details of the competition include:
     </div>
 </div>
 <div class="caption">
-	Feature importance across different forecast horizons, visualized using SHAP values.
+	Feature importance across different forecast horizons visualized using SHAP values.
 </div>
 
 ## Proposed Solution
