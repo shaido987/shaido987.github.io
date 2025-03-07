@@ -9,7 +9,7 @@ display_categories: [competitions, causality, fun]
 horizontal: false
 ---
 
-A couple of interesting projects and competitions I've been involved with, either through work or on my own time.
+Here are some exciting projects and competitions I’ve taken part in, whether through work, studies, or just for fun in my free time.
 
 <!-- pages/projects.md -->
 <div class="projects">
