@@ -9,7 +9,7 @@ nav_order: 4
 
 ---
 
-My open-sourced code can be found on [GitHub](https://github.com/shaido987). Below are a couple of recent project repositories.
+My open-sourced code is available on [GitHub](https://github.com/shaido987). Below, I highlight a selection of recent project repositories.
 
 {% if site.data.repositories.github_users %}
 
@@ -23,11 +23,11 @@ My open-sourced code can be found on [GitHub](https://github.com/shaido987). Bel
 
 ---
 
-In addition to open-source code on GitHub, I've spent some time on [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) answering questions in subjects I'm familiar with (mainly Apache-spark, Scala, and Python-related subjects). I see it as a way of giving back to the larger community, as Stack Overflow is an indispensable website in my day-to-day work. I also participate on other Stack Exchange sites to a lesser degree.
+In addition to sharing open-source code on GitHub, I actively contribute to [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) by answering questions in areas of my expertise, primarily related to Apache Spark, Scala, and Python. I view this as a meaningful way to give back to the broader technical community, especially since Stack Overflow is an invaluable resource in my daily work. I also engage, to a lesser extent, on other Stack Exchange sites.
 
 <div class="row px-md-1 justify-content-sm-center">
-  <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
-  <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>  
+  <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="Profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
+  <a href="https://stackexchange.com/users/10271255"><img src="https://stackexchange.com/users/flair/10271255.png" width="278" height="77" alt="Profile for Shaido on Stack Exchange" title="profile for Shaido on Stack Exchange"></a>  
 </div>
 
 ## GitHub Repositories
