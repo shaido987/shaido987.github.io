@@ -52,7 +52,7 @@ Key details of the competition include:
 	</div>
 </div>
 
-Our proposed solution, detailed in {% cite kalander2022wind %}, combines two innovative models. A brief overview is also available in a [YouTube presentation]((https://www.youtube.com/watch?v=6fPL44g5h-c)). The approach integrates:
+Our proposed solution, detailed in {% cite kalander2022wind %}, combines two innovative models. A brief overview is also available in a [YouTube presentation](https://www.youtube.com/watch?v=6fPL44g5h-c). The approach integrates:
 
 - **Modified DLinear (MDLinear):** An enhanced adaptation of the DLinear model {% cite Zeng2022AreTE --file references %}.
 - **Extreme Temporal Gated Network (XTGN):** A novel architecture built by stacking gated temporal convolutional networks (TCNs) {% cite dauphin2017 lea2016tcn --file references %} and incorporating nearest-neighbor information diffusion.
