@@ -36,7 +36,7 @@ The success of our multi-method solution relied on several key components:
 
 - **Confidence Measurement:** A mechanism to assess the confidence of predictions for method selection.
 - **Period Inference:** All time series in the dataset exhibit periodicity, though it may be irregular or multi-patterned. To simplify parameter selection, we base most model parameters on an inferred period. This approach ensures that time series with identical shapes but different sampling rates are treated consistently.
-- **Ensemble Learning:** Recognizing that period inference may not always be perfect, we enhance robustness by testing a range of periods derived from the inferred period $$ p $$. Specifically, we consider a set of periods $$ \{ f \cdot p \| f \in \mathcal{F} \} $$, where $$ \mathcal{F} $$ is a set of multipliers. For example, if a time series $$ T $$ has an inferred period $$ p = 128 $$ and a method $$ A $$ uses multipliers $$ \mathcal{F} = \{0.5, 1.0, 2.0\} $$, we run method $$ A $$ with periods $$ \{64, 128, 256\} $$ and select the result with the highest confidence score.
+- **Ensemble Learning:** Recognizing that period inference may not always be perfect, we enhance robustness by testing a range of periods derived from the inferred period $$ p $$. Specifically, we consider a set of periods $$ \{ f \cdot p \mid f \in \mathcal{F} \} $$, where $$ \mathcal{F} $$ is a set of multipliers. For example, if a time series $$ T $$ has an inferred period $$ p = 128 $$ and a method $$ A $$ uses multipliers $$ \mathcal{F} = \{0.5, 1.0, 2.0\} $$, we run method $$ A $$ with periods $$ \{64, 128, 256\} $$ and select the result with the highest confidence score.
 
 ### Confidence Level
 
