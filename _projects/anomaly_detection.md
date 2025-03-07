@@ -9,7 +9,7 @@ category: competitions
 
 ## Challenge Overview
 
-The [competition]((https://compete.hexagon-ml.com/practice/competition/39/)) focused on detecting anomalies across a highly diverse set of time series from various sources. Univariate time series anomaly detection is often highly dataset-dependent, making it challenging to identify algorithms that perform well across different datasets. The competition and accompanying dataset were designed to drive progress in academia and industry toward more generalizable solutions applicable to a wide range of anomaly detection scenarios.
+The [competition](https://compete.hexagon-ml.com/practice/competition/39/) focused on detecting anomalies across a highly diverse set of time series from various sources. Univariate time series anomaly detection is often highly dataset-dependent, making it challenging to identify algorithms that perform well across different datasets. The competition and accompanying dataset were designed to drive progress in academia and industry toward more generalizable solutions applicable to a wide range of anomaly detection scenarios.
 
 Key details of the challenge include:
 
