@@ -9,7 +9,7 @@ github: https://github.com/shaido987/KDD_wind_power_forecast
 github_stars: true
 ---
 
-## Challenge details
+## Challenge Overview
 
 The [KDD Cup 2022 competition](https://baidukddcup2022.github.io/) aimed to predict the wind power output of a wind farm across various time horizons. Accurate wind power forecasting is crucial for integrating wind energy into grid systems, given the inherent variability of wind. Wind power forecasting has been widely recognized as one of the most critical issues in wind power integration and operation.
 
@@ -44,7 +44,7 @@ Key details of the competition include:
 	Feature importance across different forecast horizons, visualized using SHAP values.
 </div>
 
-## Proposed solution
+## Proposed Solution
 <div class="profile float-right">
 	{% include figure.liquid loading="eager" path="assets/img/publication_preview/wind.png" title="A prediction for a single wind turbine" class="img-fluid rounded z-depth-1" %}
 	<div class="caption">
