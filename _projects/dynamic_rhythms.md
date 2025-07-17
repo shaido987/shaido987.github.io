@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dynamic Rhythmes
+title: Dynamic Rhythms
 description: Time series prediction challenge for power outagages (5nd place)
 img: assets/img/anomaly_detection/kdd_cup_anomaly.png
 importance: 3
