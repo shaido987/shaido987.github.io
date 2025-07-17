@@ -11,6 +11,8 @@ category: competitions
 
 [Challenge overview](https://thinkonward.com/app/c/challenges/dynamic-rhythms)
 
+Work-in-progress
+
 ## Certificate
 
 <div class="row">
