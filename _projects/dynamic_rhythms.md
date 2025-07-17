@@ -9,7 +9,7 @@ category: competitions
 
 ## Overview
 
-Link to the challenge: \url{https://thinkonward.com/app/c/challenges/dynamic-rhythms}
+[Challenge overview](https://thinkonward.com/app/c/challenges/dynamic-rhythms)
 
 ## Certificate
 
