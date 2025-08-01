@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Marcus. Originally from Gothenburg, Sweden, I now call Hong Kong home. I currently serve as a Senior Research Engineer at Noah's Ark Lab, where my work centers on cutting-edge research in artificial intelligence and machine learning.
+Hi, I'm Marcus. Born in Gothenburg, Sweden, I now call Hong Kong home. I currently serve as a Senior Research Engineer at Noah's Ark Lab, where my work centers on cutting-edge research in artificial intelligence and machine learning.
 
 I hold a master’s degree in Computer Science from [Chalmers University of Technology](https://www.chalmers.se/en/), with a specialization in algorithms, logic, and languages. During my studies, I broadened my horizons through international experiences, including a year as an exchange student at National Chiao Tung University ([NCTU](https://en.wikipedia.org/wiki/National_Chiao_Tung_University)) in Taiwan and another year at The Chinese University of Hong Kong ([CUHK](https://www.cuhk.edu.hk/english/index.html)), where I pursued full-time studies in Chinese (Mandarin). Prior to my master’s, I also earned a bachelor’s degree in Computer Science from Chalmers.
 
