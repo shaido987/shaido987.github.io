@@ -24,4 +24,3 @@ To tackle this problem, we first have to have a good understanding of the data. 
 - Target variable skewness: The target variable (customers without power) was highly skewed with occasional large spikes, confirming the rare but impactful nature of significant outage events.
 - Missing values: Missing values in event count columns, particularly for rare events (some with >95% missing values), were imputed with 0.
 - Strongest correlations: The tropical storm and hurricane events had the most pronounced positive correlation with the target variable, highlighting their severe impact.
-
