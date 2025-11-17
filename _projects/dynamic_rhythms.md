@@ -57,7 +57,7 @@ We employed a dual evaluation strategy: Regression Metrics (for overall predicti
 | Precision | 0.77  | When it predicted a major outage, it was correct 77% of the time (Low False Alarm Rate). |
 | F1-score  | 0.08  |    The low score confirms the overall weakness in forecasting these events reliably.     |
 
-The LightGBM model, despite having the best performance, presented a classic trade-off: High Precision with Catastrophic Recall. This result demonstrates the immense difficulty in predicting the few, massive spikes that dominate the time series.
+The LightGBM model, despite having the best performance, presented a classic trade-off: High Precision with Catastrophic Recall. This result highlights the significant challenge in predicting the few massive spikes that dominate the time series.
 
 ## Conclusion
 
