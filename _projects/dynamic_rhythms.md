@@ -32,6 +32,7 @@ The core of our approach was a meticulous feature engineering pipeline designed 
 ### Robust Feature Engineering
 
 We engineered features across six key categories to capture different facets of the problem:
+
 - **Event Count & Indicators**: We used the raw event counts directly, and for rare events ( $>95\%$ zero counts), we created is_event_type binary indicators to capture occurrence.
 - **Dominant Event**: A categorical feature, dominant_event, was created to capture which storm event had the highest count on a given day, providing a clear signal of the primary stressor.
 - **Interaction Terms**: Based on domain knowledge, we created multiplicative interaction terms (e.g., ice_storm_winter_storm_interaction) to model the combined, synergistic effect of multiple concurrent weather conditions.
