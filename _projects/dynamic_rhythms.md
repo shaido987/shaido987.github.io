@@ -40,7 +40,7 @@ We engineered features across six key categories to capture different facets of 
 - **Lagged & Window Features (Lead-Time)**: To achieve forecasting lead-time, we created lagged event counts (1, 2, and 7 days) for high-impact events (Hurricane, Tropical Storm, Winter Storm). Additionally, maximum event counts over 3 and 7-day rolling windows were computed to capture periods of overall weather intensity.
 
 ### Model Architecture and Training
-  
+
 We chose XGBoost and LightGBM for their robustness, speed, and ability to handle non-linear relationships in structured data.
 
 - **Training Target**: The model was trained on the log-transformed target (customers_out_log).
@@ -49,13 +49,13 @@ We chose XGBoost and LightGBM for their robustness, speed, and ability to handle
 
 ## Evaluation & Results
 
-We employed a dual evaluation strategy: Regression Metrics (for overall prediction quality) and Rare Event Metrics (for early warning utility). A significant outage was defined as any event exceeding the 95th percentile of the customers\_out distribution.
+We employed a dual evaluation strategy: Regression Metrics (for overall prediction quality) and Rare Event Metrics (for early warning utility). A significant outage was defined as any event exceeding the 95th percentile of the customers_out distribution.
 
-|   Metric  	| Value 	|                                      Interpretation                                      	|
-|:---------:	|:-----:	|:----------------------------------------------------------------------------------------:	|
-|   Recall  	|  0.04 	|      Only identified 4% of actual significant outages (Missed 96% of severe events).     	|
-| Precision 	| 0.77  	| When it predicted a major outage, it was correct 77% of the time (Low False Alarm Rate). 	|
-| F1-score  	| 0.08  	| The low score confirms the overall weakness in forecasting these events reliably.        	|
+|  Metric   | Value |                                      Interpretation                                      |
+| :-------: | :---: | :--------------------------------------------------------------------------------------: |
+|  Recall   | 0.04  |     Only identified 4% of actual significant outages (Missed 96% of severe events).      |
+| Precision | 0.77  | When it predicted a major outage, it was correct 77% of the time (Low False Alarm Rate). |
+| F1-score  | 0.08  |    The low score confirms the overall weakness in forecasting these events reliably.     |
 
 The LightGBM model, despite having the best performance, presented a classic trade-off: High Precision with Catastrophic Recall. This result demonstrates the immense difficulty in predicting the few, massive spikes that dominate the time series.
 
@@ -64,5 +64,6 @@ The LightGBM model, despite having the best performance, presented a classic tra
 Achieving 5th place in this complex competition highlights the value of our robust data preprocessing and advanced feature engineering. While the gradient boosting models struggled with the fundamental challenge of forcing rare, high-magnitude spikes out of a log-transformed regression framework, our approach effectively captured the critical signals from the heterogeneous data sources (lagged hurricane events, temporal trends, and event interactions). The performance gap—a near-zero $\text{R}^2$ combined with very low Recall—provides a critical academic insight: Standard regression models are fundamentally insufficient for reliable, high-recall rare-event forecasting in this domain.
 
 To build a utility-grade system, future work must pivot to specialized techniques:
+
 1. Two-Stage Modeling: Implementing a sequential model: first, a highly-tuned binary classifier (optimized for Recall) to predict the occurrence of a significant event, followed by a regression model to predict the severity.
 2. Spatio-Temporal Architectures: Utilizing advanced models like Spatio-Temporal Graph Neural Networks (STGCNs) to inherently model the spatial component of cascading power failures, which simple state-level features cannot capture.
