@@ -23,7 +23,7 @@ My open-sourced code is available on [GitHub](https://github.com/shaido987). Bel
 
 ---
 
-In addition to sharing open-source code on GitHub, I actively contribute to [Stack Overflow](https://stackoverflow.com/users/7579547/shaido) by answering questions in areas of my expertise, primarily related to Apache Spark, Scala, and Python. I view this as a meaningful way to give back to the broader technical community, especially since Stack Overflow is an invaluable resource in my daily work. I also engage, to a lesser extent, on other Stack Exchange sites.
+In addition to sharing open-source code on GitHub, I previously contributed actively to [Stack Overflow](https://stackoverflow.com/users/7579547/shaido), answering questions in areas of my expertise, primarily Apache Spark, Scala, and Python. I valued it as a way to give back to the technical community that had long supported my own work. However, I'm not very active anymore, changes introduced by the company together with the rise of AI-assisted tools, have made me reduce my participation. I still occasionally help out here and there but nothing compared to before.
 
 <div class="row px-md-1 justify-content-sm-center">
   <a href="https://stackoverflow.com/users/7579547/shaido"><img src="https://stackoverflow.com/users/flair/7579547.png" width="278" height="77" alt="Profile for Shaido at Stack Overflow" title="profile for Shaido at Stack Overflow"></a>
